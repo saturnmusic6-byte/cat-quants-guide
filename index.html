@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAT Quants Prep | Arun Sharma Interactive Guide</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="logo-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                <div class="brand-text">
+                    <h1>QUANTUM</h1>
+                    <span>CAT Prep Companion</span>
+                </div>
+            </div>
+            <nav class="nav-menu">
+                <button class="nav-item active" data-target="dashboard">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <span>Dashboard</span>
+                </button>
+                <button class="nav-item" data-target="theory">
+                    <i class="fa-solid fa-book-open"></i>
+                    <span>Theory Hub</span>
+                </button>
+                <button class="nav-item" data-target="unfolder">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    <span>Sum Unfolder</span>
+                </button>
+                <button class="nav-item" data-target="practice">
+                    <i class="fa-solid fa-fire"></i>
+                    <span>Practice Arena</span>
+                </button>
+            </nav>
+            <div class="user-profile">
+                <div class="avatar"><i class="fa-solid fa-user-astronaut"></i></div>
+                <div class="profile-info">
+                    <p class="profile-name">CAT Aspirant</p>
+                    <p class="profile-status">Aiming for 99.9+ %ile</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="app-header">
+                <div class="header-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Search chapters, formulas, shortcuts..." id="global-search">
+                </div>
+                <div class="header-actions">
+                    <button class="theme-toggle" id="theme-toggle-btn" title="Toggle Theme">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                    <div class="badge-container">
+                        <i class="fa-solid fa-award text-gold animate-bounce"></i>
+                        <span class="badge-text">Gold Member</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- DASHBOARD SECTION -->
+            <section id="dashboard" class="content-section active">
+                <div class="hero-card">
+                    <div class="hero-content">
+                        <h2>Master Quantitative Aptitude</h2>
+                        <p>An interactive digital companion illustrating the methodologies, cheats, and shortcuts from Arun Sharma's legendary CAT syllabus. Stop calculating. Start solving.</p>
+                        <div class="hero-actions">
+                            <button class="btn btn-primary" onclick="switchSection('unfolder')">
+                                <i class="fa-solid fa-play"></i> Unfold Classic Sums
+                            </button>
+                            <button class="btn btn-secondary" onclick="switchSection('practice')">
+                                <i class="fa-solid fa-dumbbell"></i> Try Practice Quiz
+                            </button>
+                        </div>
+                    </div>
+                    <div class="hero-graphic">
+                        <div class="circle-glow"></div>
+                        <div class="math-symbols-floating">
+                            <span style="--i:1">x²</span>
+                            <span style="--i:2">∫</span>
+                            <span style="--i:3">π</span>
+                            <span style="--i:4">%</span>
+                            <span style="--i:5">∑</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Prep Stats Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper blue">
+                            <i class="fa-solid fa-percent"></i>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-label">Syllabus Mastered</span>
+                            <h3 class="stat-value" id="mastery-percent">0%</h3>
+                            <div class="progress-bar-small"><div class="progress-fill" id="mastery-fill" style="width: 0%"></div></div>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper purple">
+                            <i class="fa-solid fa-book"></i>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-label">Chapters Completed</span>
+                            <h3 class="stat-value" id="completed-count">0 / 15</h3>
+                            <p class="stat-desc">Target: 15 chapters</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper green">
+                            <i class="fa-solid fa-bullseye"></i>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-label">Practice Accuracy</span>
+                            <h3 class="stat-value" id="practice-accuracy">0%</h3>
+                            <p class="stat-desc" id="practice-solved">0 questions solved</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon-wrapper orange">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <div class="stat-info">
+                            <span class="stat-label">Study Streak</span>
+                            <h3 class="stat-value">5 Days</h3>
+                            <p class="stat-desc">Keep the momentum going!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Study Planner and Recent activity -->
+                <div class="dashboard-grid">
+                    <!-- Study Planner Tracker -->
+                    <div class="dashboard-card planner-card">
+                        <div class="card-header">
+                            <h3><i class="fa-solid fa-calendar-check text-indigo"></i> Study Planner & Progress Tracker</h3>
+                            <button class="btn-text" id="reset-progress"><i class="fa-solid fa-rotate-left"></i> Reset</button>
+                        </div>
+                        <div class="planner-table-container">
+                            <table class="planner-table">
+                                <thead>
+                                    <tr>
+                                        <th>Block / Chapter</th>
+                                        <th>Core Focus Area</th>
+                                        <th>Status</th>
+                                        <th>Mastery Level</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="planner-tbody">
+                                    <!-- Populated dynamically by app.js -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <!-- Side Tip card & Cheat Sheet Quick Access -->
+                    <div class="dashboard-card quick-access-card">
+                        <div class="card-header">
+                            <h3><i class="fa-solid fa-lightbulb text-gold"></i> Arun Sharma Smart Mindset</h3>
+                        </div>
+                        <div class="tips-carousel">
+                            <div class="tip-item">
+                                <span class="tip-badge">REMAINDER TRICK</span>
+                                <h4>Euler's Theorem</h4>
+                                <p>For any two numbers <em>a</em> and <em>n</em> that are co-prime, $a^{\phi(n)} \equiv 1 \pmod n$, where $\phi(n)$ is Euler's totient number of <em>n</em>. Perfect for high-power modular arithmetic problems!</p>
+                            </div>
+                            <div class="tip-item">
+                                <span class="tip-badge">ARITHMETIC SPEED HACK</span>
+                                <h4>Product Constancy & Ratios</h4>
+                                <p>If distance is constant, $S_1 \cdot T_1 = S_2 \cdot T_2$. Ratio of Speed is inversely proportional to Time. A speed increase of $1/x$ results in a travel time reduction of $1/(x+1)$. Avoid complex equations!</p>
+                            </div>
+                            <div class="tip-item">
+                                <span class="tip-badge">ALGEBRA MINDSET</span>
+                                <h4>Smart Substitutions</h4>
+                                <p>In equations with constraints (e.g., $x + y + z = 10$), choose friendly extreme values like $x=10, y=0, z=0$ or symmetric values $x=y=z=10/3$ to test options in seconds instead of doing lengthy algebraic proofs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- THEORY HUB SECTION -->
+            <section id="theory" class="content-section">
+                <div class="section-title-wrapper">
+                    <h2><i class="fa-solid fa-book-open"></i> Core Blocks Theory Hub</h2>
+                    <p>Unlock the essential conceptual building blocks of the CAT syllabus. Beautiful cheat sheets, derivations, and formulas at your fingertips.</p>
+                </div>
+
+                <div class="blocks-grid" id="blocks-container">
+                    <!-- Populated dynamically by app.js -->
+                </div>
+            </section>
+
+            <!-- SUM UNFOLDER SECTION -->
+            <section id="unfolder" class="content-section">
+                <div class="section-title-wrapper">
+                    <h2><i class="fa-solid fa-wand-magic-sparkles"></i> The Sum Unfolder</h2>
+                    <p>Watch classic CAT sums unfold. Compare the traditional, formula-heavy textbook method with the elegant, logical **Arun Sharma Shortcut Method**.</p>
+                </div>
+
+                <div class="unfolder-layout">
+                    <!-- Sidebar list of problems -->
+                    <div class="unfolder-list-panel">
+                        <h3>Select a Classic Sum</h3>
+                        <div class="problem-menu" id="problem-menu">
+                            <!-- Populated dynamically by app.js -->
+                        </div>
+                    </div>
+
+                    <!-- Problem details and Unfolder workspace -->
+                    <div class="unfolder-workspace-panel" id="unfolder-workspace">
+                        <!-- Populated dynamically based on selected problem -->
+                        <div class="workspace-placeholder">
+                            <i class="fa-solid fa-arrow-left animate-pulse"></i>
+                            <h3>Select a sum from the menu to start unfolding!</h3>
+                            <p>Explore step-by-step comparative breakdowns of real CAT-style questions across different chapters.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PRACTICE AREA SECTION -->
+            <section id="practice" class="content-section">
+                <div class="section-title-wrapper">
+                    <h2><i class="fa-solid fa-fire"></i> Practice Arena Simulator</h2>
+                    <p>Test your conceptual understanding and speed in our mock practice playground. Solve CAT questions, submit answers, and instantly unfold explanations.</p>
+                </div>
+
+                <div class="practice-layout">
+                    <!-- Quiz Progress Tracker -->
+                    <div class="quiz-header-card">
+                        <div class="quiz-progress-text">
+                            <span>Question <strong id="current-q-num">1</strong> of <strong id="total-q-num">5</strong></span>
+                            <span class="quiz-score">Score: <strong id="score-val">0</strong> / <strong id="max-score-val">0</strong></span>
+                        </div>
+                        <div class="quiz-progress-track">
+                            <div class="quiz-progress-fill" id="quiz-progress-bar" style="width: 20%"></div>
+                        </div>
+                    </div>
+
+                    <!-- Question Container -->
+                    <div class="practice-card" id="practice-card">
+                        <!-- Populated dynamically by app.js -->
+                        <div class="question-box">
+                            <span class="q-badge">BLOCK I: NUMBER SYSTEMS</span>
+                            <h3 class="q-text">What is the remainder when $3^{102}$ is divided by $103$?</h3>
+                            
+                            <div class="options-container">
+                                <label class="option-item">
+                                    <input type="radio" name="practice-option" value="A">
+                                    <span class="option-marker">A</span>
+                                    <span class="option-text">1</span>
+                                </label>
+                                <label class="option-item">
+                                    <input type="radio" name="practice-option" value="B">
+                                    <span class="option-marker">B</span>
+                                    <span class="option-text">3</span>
+                                </label>
+                                <label class="option-item">
+                                    <input type="radio" name="practice-option" value="C">
+                                    <span class="option-marker">C</span>
+                                    <span class="option-text">9</span>
+                                </label>
+                                <label class="option-item">
+                                    <input type="radio" name="practice-option" value="D">
+                                    <span class="option-marker">D</span>
+                                    <span class="option-text">102</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Feedback and Actions -->
+                        <div class="practice-actions">
+                            <button class="btn btn-secondary" id="quiz-hint-btn"><i class="fa-solid fa-lightbulb"></i> Get Hint</button>
+                            <button class="btn btn-primary" id="quiz-submit-btn"><i class="fa-solid fa-check"></i> Submit Answer</button>
+                            <button class="btn btn-indigo hidden animate-fade-in" id="quiz-unfold-btn"><i class="fa-solid fa-wand-magic-sparkles"></i> Unfold Explanation</button>
+                            <button class="btn btn-secondary hidden" id="quiz-next-btn">Next Question <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+
+                        <!-- Hint Box -->
+                        <div class="practice-hint-box hidden" id="practice-hint-box">
+                            <div class="hint-title"><i class="fa-solid fa-lightbulb text-gold"></i> Conceptual Hint</div>
+                            <p id="practice-hint-text">Think of Fermat's Little Theorem! 103 is a prime number. What is the relation between $a^{p-1}$ and $p$ when $p$ is prime?</p>
+                        </div>
+
+                        <!-- Unfolded Solution Box -->
+                        <div class="practice-solution-box hidden" id="practice-solution-box">
+                            <div class="solution-header">
+                                <h3><i class="fa-solid fa-wand-magic-sparkles text-indigo"></i> Solution Unfolded</h3>
+                            </div>
+                            <div class="comparative-solution">
+                                <div class="solution-column traditional">
+                                    <h4>Traditional Textbook Method</h4>
+                                    <p id="traditional-sol-text">Detailed equations go here...</p>
+                                </div>
+                                <div class="solution-column arunsharma">
+                                    <h4>Arun Sharma Speed Shortcut</h4>
+                                    <p id="shortcut-sol-text">Mindset tricks and shortcuts go here...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Notification Toast -->
+    <div class="toast hidden" id="toast">
+        <i class="fa-solid fa-circle-check"></i>
+        <span class="toast-message">Progress saved successfully!</span>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
