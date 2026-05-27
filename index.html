@@ -27,7 +27,10 @@
         <main class="main-content">
             <header class="main-header">
                 <span class="curr-question-title" id="curr-question-title">Select a Question</span>
-                <button class="theme-toggle" id="theme-toggle" title="Toggle Theme">🌓</button>
+                <div class="header-actions">
+                    <button class="ai-toggle-btn" id="ai-toggle-btn" title="Toggle AI Tutor">🤖 AI Tutor</button>
+                    <button class="theme-toggle" id="theme-toggle" title="Toggle Theme">🌓</button>
+                </div>
             </header>
             
             <div id="solution-view" class="solution-view">
@@ -37,6 +40,49 @@
                 </div>
             </div>
         </main>
+
+        <!-- Right Sidebar for AI Chat Tutor -->
+        <aside class="ai-sidebar" id="ai-sidebar">
+            <div class="ai-header">
+                <div class="ai-title-row">
+                    <span class="ai-status-dot"></span>
+                    <h3>AI Quants Tutor</h3>
+                </div>
+                <button class="ai-close-btn" id="ai-close-btn">&times;</button>
+            </div>
+            
+            <div class="ai-context-indicator">
+                <span>Context:</span> <strong id="ai-current-context">No Question Selected</strong>
+            </div>
+
+            <div class="ai-chat-history" id="ai-chat-history">
+                <!-- Chat messages loaded dynamically -->
+            </div>
+
+            <div class="ai-suggestions-container">
+                <p class="suggestions-label">💡 Silly Doubts Suggestion Chips:</p>
+                <div class="ai-suggestions" id="ai-suggestions">
+                    <!-- Suggestion chips loaded dynamically -->
+                </div>
+            </div>
+
+            <div class="ai-input-area">
+                <div class="ai-input-row">
+                    <input type="text" id="ai-user-input" placeholder="Ask any silly doubt about this sum..." />
+                    <button id="ai-send-btn" title="Send message">⚡</button>
+                </div>
+                <div class="ai-settings-toggle">
+                    <button id="ai-settings-btn" title="AI Settings">⚙️ Optional: Connect Gemini API Key</button>
+                </div>
+                <div class="ai-settings-panel hidden" id="ai-settings-panel">
+                    <p>Enter your Google Gemini API key to enable unrestricted, advanced AI chat responses directly in your browser:</p>
+                    <div class="key-input-row">
+                        <input type="password" id="ai-gemini-key" placeholder="AIzaSy..." />
+                        <button id="ai-save-key-btn">Save Key</button>
+                    </div>
+                </div>
+            </div>
+        </aside>
     </div>
 
     <script src="percentages-lod1-data.js?v=2.0"></script>
