@@ -24,7 +24,7 @@
                 </div>
             </div>
             <nav class="nav-menu">
-                <button class="nav-item active" data-target="dashboard">
+                <button class="nav-item" data-target="dashboard">
                     <i class="fa-solid fa-chart-line"></i>
                     <span>Dashboard</span>
                 </button>
@@ -32,7 +32,7 @@
                     <i class="fa-solid fa-book-open"></i>
                     <span>Theory Hub</span>
                 </button>
-                <button class="nav-item" data-target="unfolder">
+                <button class="nav-item active" data-target="unfolder">
                     <i class="fa-solid fa-wand-magic-sparkles"></i>
                     <span>Sum Unfolder</span>
                 </button>
@@ -70,7 +70,7 @@
             </header>
 
             <!-- DASHBOARD SECTION -->
-            <section id="dashboard" class="content-section active">
+            <section id="dashboard" class="content-section">
                 <div class="hero-card">
                     <div class="hero-content">
                         <h2>Master Quantitative Aptitude</h2>
@@ -204,7 +204,7 @@
             </section>
 
             <!-- SUM UNFOLDER SECTION -->
-            <section id="unfolder" class="content-section">
+            <section id="unfolder" class="content-section active">
                 <div class="section-title-wrapper">
                     <h2><i class="fa-solid fa-wand-magic-sparkles"></i> The Sum Unfolder</h2>
                     <p>Watch classic CAT sums unfold. Compare the traditional, formula-heavy textbook method with the elegant, logical **Arun Sharma Shortcut Method**.</p>
@@ -213,8 +213,9 @@
                 <div class="unfolder-layout">
                     <!-- Sidebar list of problems -->
                     <div class="unfolder-list-panel">
-                        <h3>Select a Classic Sum</h3>
-                        <div class="problem-menu" id="problem-menu">
+                        <h3>Select a Sum</h3>
+                        <input type="text" id="sum-search" placeholder="Search questions..." style="width:100%;padding:8px 12px;margin-bottom:12px;background:rgba(255,255,255,0.05);border:1px solid var(--border-color);border-radius:8px;color:var(--text-primary);font-size:0.85rem;outline:none;">
+                        <div class="problem-menu" id="problem-menu" style="max-height:70vh;overflow-y:auto;padding-right:4px;">
                             <!-- Populated dynamically by app.js -->
                         </div>
                     </div>
