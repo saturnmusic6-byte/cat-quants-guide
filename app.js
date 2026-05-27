@@ -418,9 +418,16 @@ document.addEventListener("DOMContentLoaded", () => {
     bindQuizEvents();
     bindThemeToggle();
     bindGlobalSearch();
+    bindSumSearch();
 
-    // Default select first sum in Unfolder
-    selectClassicSum("sum1");
+    // Default select first Percentages LOD1 sum (Q19) if available, else sum1
+    const defaultSum = CLASSIC_SUMS.find(s => s.id === 'sum19') ? 'sum19' : 'sum1';
+    selectClassicSum(defaultSum);
+    // Scroll active menu item into view after a tick
+    setTimeout(() => {
+        const activeItem = document.querySelector('.problem-menu-item.active');
+        if (activeItem) activeItem.scrollIntoView({ block: 'nearest' });
+    }, 100);
     // Render first quiz question
     renderQuizQuestion();
 });
@@ -1084,6 +1091,26 @@ function bindGlobalSearch() {
                 row.style.display = "";
             } else {
                 row.style.display = "none";
+            }
+        });
+    });
+}
+
+function bindSumSearch() {
+    const searchInput = document.getElementById("sum-search");
+    if (!searchInput) return;
+
+    searchInput.addEventListener("input", (e) => {
+        const query = e.target.value.toLowerCase().trim();
+        const items = document.querySelectorAll(".problem-menu-item");
+        items.forEach(btn => {
+            const title = btn.querySelector(".p-menu-title")?.innerText.toLowerCase() || "";
+            const block = btn.querySelector(".p-menu-block")?.innerText.toLowerCase() || "";
+            const sumId = btn.getAttribute("data-sum") || "";
+            if (!query || title.includes(query) || block.includes(query) || sumId.includes(query)) {
+                btn.style.display = "";
+            } else {
+                btn.style.display = "none";
             }
         });
     });
