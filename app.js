@@ -401,6 +401,9 @@ const APP_STATE = {
 // 3. INITIALIZATION & ROUTING
 // --------------------------------------------------------------------------
 document.addEventListener("DOMContentLoaded", () => {
+    if (typeof PERCENTAGES_LOD1_SUMS !== 'undefined') {
+        CLASSIC_SUMS.push(...PERCENTAGES_LOD1_SUMS);
+    }
     loadPlannerState();
     loadQuizState();
     initTheme();
