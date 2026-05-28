@@ -197,12 +197,8 @@ function handleSend() {
     if (geminiKey) {
         askGemini(text, geminiKey, typingId);
     } else {
-        // Use built-in offline AI
-        setTimeout(() => {
-            removeTyping(typingId);
-            const answer = getOfflineAnswer(text);
-            addBotMessage(answer);
-        }, 400 + Math.random() * 600);
+        // Use free keyless AI with offline fallback
+        askFreeAI(text, typingId);
     }
 }
 
@@ -496,6 +492,42 @@ function getOfflineAnswer(query) {
         <p>I'm here to help! 😊 Please select a question from the sidebar first, then ask me anything about it.</p>
         <p>No question is too silly — I'll explain everything from scratch if needed!</p>
     `;
+}
+
+async function askFreeAI(userQuery, typingId) {
+    const contextText = currentSum
+        ? `The student is studying this CAT exam percentage question: "${currentSum.question}". The traditional solution is: ${currentSum.traditional.steps.map(s => s.desc).join(" ")}. The shortcut is: ${currentSum.shortcut.steps.map(s => s.desc).join(" ")}. Answer: ${currentSum.traditional.highlight}`
+        : "The student is studying CAT exam quantitative aptitude (percentages).";
+
+    const systemPrompt = `You are a friendly, patient math tutor for a CAT exam student studying Arun Sharma's Percentages chapter. The student might ask very basic or "silly" doubts — never judge them. Always explain in simple, beginner-friendly language with examples. Keep answers concise (under 200 words) but thorough. Context: ${contextText}`;
+
+    const url = `https://text.pollinations.ai/${encodeURIComponent(userQuery)}?system=${encodeURIComponent(systemPrompt)}`;
+
+    try {
+        const resp = await fetch(url);
+        removeTyping(typingId);
+
+        if (!resp.ok) {
+            // Fall back to offline answer
+            const answer = getOfflineAnswer(userQuery);
+            addBotMessage(answer);
+            return;
+        }
+
+        const text = await resp.text();
+        if (text && !text.includes("Queue full for IP") && !text.includes("status\":429")) {
+            const formatted = formatGeminiResponse(text);
+            addBotMessage(formatted);
+        } else {
+            // Fall back to offline
+            const answer = getOfflineAnswer(userQuery);
+            addBotMessage(answer);
+        }
+    } catch (err) {
+        removeTyping(typingId);
+        const answer = getOfflineAnswer(userQuery);
+        addBotMessage(answer);
+    }
 }
 
 /* ══════════════════════════════════════════════
