@@ -1,5 +1,5 @@
 /* ==========================================================================
-   PERCENTAGES-LOD2-DATA.JS - Arun Sharma Percentages LOD 2 Questions 1 to 47
+   PERCENTAGES-LOD2-DATA.JS - Cleaned Arun Sharma Percentages LOD 2 Questions
    ========================================================================== */
 
 const PERCENTAGES_LOD2_SUMS = [
@@ -17,23 +17,23 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Step 1",
-                    "desc": "Let the initial quantity be $Q = 15$ dozen."
+                    "desc": "Let the initial quantity be Q = 15 dozen."
                 },
                 {
                     "num": "Step 2",
-                    "desc": "Each year, the quantity becomes: $Q_{new} = Q \\times (1 + x/100) \\times (1 - y/100)$."
+                    "desc": "Each year, the quantity becomes: Q_new = Q * (1 + x/100) * (1 - y/100)."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "After 10 years (from end of 2022 to end of 2032), the quantity is still 15 dozen:<br>$15 \\times [(1 + x/100)(1 - y/100)]^{10} = 15$."
+                    "desc": "After 10 years (from end of 2022 to end of 2032), the quantity is still 15 dozen:<br>15 * [(1 + x/100)(1 - y/100)]^10 = 15."
                 },
                 {
                     "num": "Step 4",
-                    "desc": "This implies: $(1 + x/100)(1 - y/100) = 1$<br>$1 + x/100 - y/100 - xy/10000 = 1$."
+                    "desc": "This implies: (1 + x/100)(1 - y/100) = 1<br>1 + x/100 - y/100 - xy/10000 = 1."
                 },
                 {
                     "num": "Step 5",
-                    "desc": "Simplifying: $x - y = xy/100$.<br>Since both $x$ and $y$ are greater than zero, $xy/100 > 0$.<br>Therefore, $x - y > 0 \\Rightarrow x > y$."
+                    "desc": "Simplifying: x - y = xy/100.<br>Since both x and y are greater than zero, xy/100 > 0.<br>Therefore, x - y > 0 => x > y."
                 }
             ],
             "highlight": "x > y (Option c)"
@@ -43,11 +43,11 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Base Rule",
-                    "desc": "For a net change of 0% after a percentage increase followed by a decrease, the percentage decrease must be applied to a larger base.<br>Thus, the decrease rate ($y$) must be numerically smaller than the increase rate ($x$) to cancel it out."
+                    "desc": "For a net change of 0% after a percentage increase followed by a decrease, the percentage decrease must be applied to a larger base.<br>Thus, the decrease rate (y) must be numerically smaller than the increase rate (x) to cancel it out."
                 },
                 {
                     "num": "Logic Check",
-                    "desc": "Since $(1 + x/100)(1 - y/100) = 1$, we get $x - y = xy/100$. As $xy/100$ is positive, $x$ must be greater than $y$."
+                    "desc": "Since (1 + x/100)(1 - y/100) = 1, we get x - y = xy/100. As xy/100 is positive, x must be greater than y."
                 }
             ],
             "highlight": "x > y because addition base is smaller than subtraction base."
@@ -71,7 +71,7 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Step 2",
-                    "desc": "Men placed above 25 LPA = 75% of 70 = $0.75 \\times 70 = 52.5$."
+                    "desc": "Men placed above 25 LPA = 75% of 70 = 0.75 * 70 = 52.5."
                 },
                 {
                     "num": "Step 3",
@@ -79,15 +79,15 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Step 4",
-                    "desc": "Women placed above 25 LPA = Total above 25 LPA - Men above 25 LPA = $75 - 52.5 = 22.5$."
+                    "desc": "Women placed above 25 LPA = Total above 25 LPA - Men above 25 LPA = 75 - 52.5 = 22.5."
                 },
                 {
                     "num": "Step 5",
-                    "desc": "Women placed at 25 LPA or less = Total women - Women above 25 LPA = $30 - 22.5 = 7.5$."
+                    "desc": "Women placed at 25 LPA or less = Total women - Women above 25 LPA = 30 - 22.5 = 7.5."
                 },
                 {
                     "num": "Step 6",
-                    "desc": "Fraction of women at 25 LPA or less = $7.5 / 30 = 1/4$."
+                    "desc": "Fraction of women at 25 LPA or less = 7.5 / 30 = 1/4."
                 }
             ],
             "highlight": "1/4 (Option b)"
@@ -101,11 +101,11 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Equation",
-                    "desc": "Let $w$ be the fraction of women earning above 25L. We have:<br>$(7/10) \\times 0.75 + (3/10) \\times w = 0.75$<br>Multiply by 10:<br>$5.25 + 3w = 7.5 \\Rightarrow 3w = 2.25 \\Rightarrow w = 0.75$ (or 3/4)."
+                    "desc": "Let w be the fraction of women earning above 25L. We have:<br>(7/10) * 0.75 + (3/10) * w = 0.75<br>Multiply by 10:<br>5.25 + 3w = 7.5 => 3w = 2.25 => w = 0.75 (or 3/4)."
                 },
                 {
                     "num": "Find Complement",
-                    "desc": "If 3/4 of women earn above 25L, then the fraction of women earning 25L or less is $1 - 3/4 = 1/4$."
+                    "desc": "If 3/4 of women earn above 25L, then the fraction of women earning 25L or less is 1 - 3/4 = 1/4."
                 }
             ],
             "highlight": "Fraction = 1 - 3/4 = 1/4."
@@ -129,11 +129,11 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Step 2",
-                    "desc": "59.25% of total population = 300 million.<br>Total Population = $300 / 0.5925 \\approx 506.33$ million."
+                    "desc": "59.25% of total population = 300 million.<br>Total Population = 300 / 0.5925 approx. 506.33 million."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "Size of 25-34 age group = 15% of 506.33 million $\\approx 75.95$ million."
+                    "desc": "Size of 25-34 age group = 15% of 506.33 million approx. 75.95 million."
                 },
                 {
                     "num": "Step 4",
@@ -141,7 +141,7 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Step 5",
-                    "desc": "W = $75.95 / 1.98 \\approx 38.36$ million (rounds to 38.3 or 38.4 million)."
+                    "desc": "W = 75.95 / 1.98 approx. 38.36 million (rounds to 38.3 or 38.4 million)."
                 }
             ],
             "highlight": "None of these (Option d) - actual answer is ~38.3 million."
@@ -151,7 +151,7 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Approximation",
-                    "desc": "59.25% is very close to 60% (or 3/5).<br>If 3/5 of Total = 300M, then Total $\\approx 500$M."
+                    "desc": "59.25% is very close to 60% (or 3/5).<br>If 3/5 of Total = 300M, then Total approx. 500M."
                 },
                 {
                     "num": "Group count",
@@ -183,7 +183,7 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Step 2",
-                    "desc": "Weight of pulp in 40 kg fresh grapes = 5% of 40 = $0.05 \\times 40 = 2$ kg."
+                    "desc": "Weight of pulp in 40 kg fresh grapes = 5% of 40 = 0.05 * 40 = 2 kg."
                 },
                 {
                     "num": "Step 3",
@@ -195,7 +195,7 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Step 5",
-                    "desc": "D = $2 / 0.8 = 2.5$ kg."
+                    "desc": "D = 2 / 0.8 = 2.5 kg."
                 }
             ],
             "highlight": "2.5 kg (Option a)"
@@ -213,7 +213,7 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Solve",
-                    "desc": "Weight of dry grapes = $40 \\text{ kg} / 16 = 2.5$ kg."
+                    "desc": "Weight of dry grapes = 40 kg / 16 = 2.5 kg."
                 }
             ],
             "highlight": "Mental calculation: 40 / 16 = 2.5 kg."
@@ -237,23 +237,23 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Step 2",
-                    "desc": "Case 1: $a\\%$ increase in tea and $b\\%$ in coffee leads to $5c\\%$ overall:<br>$(3 \\times a + 1 \\times b) / 4 = 5c \\Rightarrow 3a + b = 20c$."
+                    "desc": "Case 1: a% increase in tea and b% in coffee leads to 5c% overall:<br>(3 * a + 1 * b) / 4 = 5c => 3a + b = 20c."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "Case 2: $b\\%$ increase in tea and $a\\%$ in coffee leads to $3c\\%$ overall:<br>$(3 \\times b + 1 \\times a) / 4 = 3c \\Rightarrow a + 3b = 12c$."
+                    "desc": "Case 2: b% increase in tea and a% in coffee leads to 3c% overall:<br>(3 * b + 1 * a) / 4 = 3c => a + 3b = 12c."
                 },
                 {
                     "num": "Step 4",
-                    "desc": "Divide Case 1 equation by Case 2 equation to eliminate $c$:<br>$(3a + b) / (a + 3b) = 20c / 12c = 5/3$."
+                    "desc": "Divide Case 1 equation by Case 2 equation to eliminate c:<br>(3a + b) / (a + 3b) = 20c / 12c = 5/3."
                 },
                 {
                     "num": "Step 5",
-                    "desc": "Cross-multiply: $3(3a + b) = 5(a + 3b) \\Rightarrow 9a + 3b = 5a + 15b$."
+                    "desc": "Cross-multiply: 3(3a + b) = 5(a + 3b) => 9a + 3b = 5a + 15b."
                 },
                 {
                     "num": "Step 6",
-                    "desc": "Group terms: $4a = 12b \\Rightarrow a/b = 3 \\Rightarrow a : b = 3:1$."
+                    "desc": "Group terms: 4a = 12b => a/b = 3 => a : b = 3:1."
                 }
             ],
             "highlight": "3:1 (Option d)"
@@ -263,11 +263,11 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Weighted Average Form",
-                    "desc": "For quantities in ratio 3:1 (Tea:Coffee):<br>Case 1: $3a + b = \\text{result}_1$<br>Case 2: $3b + a = \\text{result}_2$"
+                    "desc": "For quantities in ratio 3:1 (Tea:Coffee):<br>Case 1: 3a + b = result}_1<br>Case 2: 3b + a = result}_2"
                 },
                 {
                     "num": "Substitute results",
-                    "desc": "Ratio of overall increases = $5c : 3c = 5:3$.<br>Thus: $(3a + b)/(a + 3b) = 5/3 \\Rightarrow 9a + 3b = 5a + 15b \\Rightarrow 4a = 12b \\Rightarrow a/b = 3:1$."
+                    "desc": "Ratio of overall increases = 5c : 3c = 5:3.<br>Thus: (3a + b)/(a + 3b) = 5/3 => 9a + 3b = 5a + 15b => 4a = 12b => a/b = 3:1."
                 }
             ],
             "highlight": "a:b = 3:1."
@@ -287,19 +287,19 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Step 1",
-                    "desc": "Let initial production be $T$, initial population $P$, and initial per capita production $C$.<br>$T = P \\times C \\Rightarrow P = T / C$."
+                    "desc": "Let initial production be T, initial population P, and initial per capita production C.<br>T = P * C => P = T / C."
                 },
                 {
                     "num": "Step 2",
-                    "desc": "After changes, new production $T' = 1.3T$, and new per capita $C' = 1.14C$."
+                    "desc": "After changes, new production T' = 1.3T, and new per capita C' = 1.14C."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "New population $P' = T' / C' = 1.3T / 1.14C \\approx 1.14035 \\times P$."
+                    "desc": "New population P' = T' / C' = 1.3T / 1.14C approx. 1.14035 * P."
                 },
                 {
                     "num": "Step 4",
-                    "desc": "Percentage increase in population = $(1.14035 - 1) \\times 100 \\approx 14.04\\%$."
+                    "desc": "Percentage increase in population = (1.14035 - 1) * 100 approx. 14.04%."
                 }
             ],
             "highlight": "14% (Option b)"
@@ -309,7 +309,7 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Multiplier Division",
-                    "desc": "Let population multiplier be $m_p$.<br>$1.30 = m_p \\times 1.14 \\Rightarrow m_p = 1.30 / 1.14 \\approx 1.14$."
+                    "desc": "Let population multiplier be m_p.<br>1.30 = m_p * 1.14 => m_p = 1.30 / 1.14 approx. 1.14."
                 },
                 {
                     "num": "Deduce Growth",
@@ -333,23 +333,23 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Step 1",
-                    "desc": "Let the number of carnivorous animals in 2030 be $C$, and non-carnivorous be $N$.<br>$C + N = 13500$."
+                    "desc": "Let the number of carnivorous animals in 2030 be C, and non-carnivorous be N.<br>C + N = 13500."
                 },
                 {
                     "num": "Step 2",
-                    "desc": "In 2035, the population is $1.22C + 1.2N = 16310$."
+                    "desc": "In 2035, the population is 1.22C + 1.2N = 16310."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "Substitute $N = 13500 - C$:<br>$1.22C + 1.2(13500 - C) = 16310$."
+                    "desc": "Substitute N = 13500 - C:<br>1.22C + 1.2(13500 - C) = 16310."
                 },
                 {
                     "num": "Step 4",
-                    "desc": "Simplify: $1.22C + 16200 - 1.2C = 16310$<br>$0.02C = 110 \\Rightarrow C = 5500$ (in 2030)."
+                    "desc": "Simplify: 1.22C + 16200 - 1.2C = 16310<br>0.02C = 110 => C = 5500 (in 2030)."
                 },
                 {
                     "num": "Step 5",
-                    "desc": "Find carnivorous animals in 2035:<br>$1.22 \\times 5500 = 6710$."
+                    "desc": "Find carnivorous animals in 2035:<br>1.22 * 5500 = 6710."
                 }
             ],
             "highlight": "6710 (Textbook typo: printed option labels as percentages; correct count is 6710)"
@@ -359,19 +359,19 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Uniform growth assumption",
-                    "desc": "If both groups had grown by 20%, total increase would be $13500 \\times 20\\% = 2700$."
+                    "desc": "If both groups had grown by 20%, total increase would be 13500 * 20% = 2700."
                 },
                 {
                     "num": "Extra growth",
-                    "desc": "Actual increase is $16310 - 13500 = 2810$.<br>Extra increase = $2810 - 2700 = 110$."
+                    "desc": "Actual increase is 16310 - 13500 = 2810.<br>Extra increase = 2810 - 2700 = 110."
                 },
                 {
                     "num": "Isolate C",
-                    "desc": "This extra 110 comes from the extra 2% increase in carnivorous animals:<br>2% of $C_{2030} = 110 \\Rightarrow C_{2030} = 5500$."
+                    "desc": "This extra 110 comes from the extra 2% increase in carnivorous animals:<br>2% of C_2030 = 110 => C_2030 = 5500."
                 },
                 {
                     "num": "Calculate 2035 count",
-                    "desc": "Carnivorous in 2035 = $5500 \\times 1.22 = 6710$."
+                    "desc": "Carnivorous in 2035 = 5500 * 1.22 = 6710."
                 }
             ],
             "highlight": "Deviation: C (2035) = 1.22 * (2810 - 2700)/0.02 = 6710."
@@ -391,23 +391,23 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Step 1",
-                    "desc": "Let Dhiman's score be $D$.<br>Chandan's score $C = 0.8D$ (20% less than $D$)."
+                    "desc": "Let Dhiman's score be D.<br>Chandan's score C = 0.8D (20% less than D)."
                 },
                 {
                     "num": "Step 2",
-                    "desc": "Biman's score $B = C \\times 4/3 = 0.8D \\times 4/3 = 3.2D / 3$ (33.33% or $1/3$ more than $C$)."
+                    "desc": "Biman's score B = C * 4/3 = 0.8D * 4/3 = 3.2D / 3 (33.33% or 1/3 more than C)."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "Aman's score $A = 0.8B = 0.8 \\times (3.2D / 3) = 2.56D / 3$ (20% less than $B$)."
+                    "desc": "Aman's score A = 0.8B = 0.8 * (3.2D / 3) = 2.56D / 3 (20% less than B)."
                 },
                 {
                     "num": "Step 4",
-                    "desc": "We are given $A = 128$:<br>$2.56D / 3 = 128 \\Rightarrow 2.56D = 384$."
+                    "desc": "We are given A = 128:<br>2.56D / 3 = 128 => 2.56D = 384."
                 },
                 {
                     "num": "Step 5",
-                    "desc": "Solve for $D$: $D = 384 / 2.56 = 150$."
+                    "desc": "Solve for D: D = 384 / 2.56 = 150."
                 }
             ],
             "highlight": "150 (Option a)"
@@ -417,15 +417,15 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Fraction Rules",
-                    "desc": "- 20% less is $4/5$<br>- 33.33% more is $4/3$<br>- 20% less is $4/5$"
+                    "desc": "- 20% less is 4/5<br>- 33.33% more is 4/3<br>- 20% less is 4/5"
                 },
                 {
                     "num": "Chain Equation",
-                    "desc": "$A = D \\times (4/5) \\times (4/3) \\times (4/5)$<br>$128 = D \\times (64/75)$"
+                    "desc": "A = D * (4/5) * (4/3) * (4/5)<br>128 = D * (64/75)"
                 },
                 {
                     "num": "Solve",
-                    "desc": "Since $128 = 2 \\times 64$, we have:<br>$D = 2 \\times 75 = 150$."
+                    "desc": "Since 128 = 2 * 64, we have:<br>D = 2 * 75 = 150."
                 }
             ],
             "highlight": "Direct: D = 128 * 75 / 64 = 150."
@@ -445,31 +445,31 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Step 1",
-                    "desc": "Let total marks = $100x$. Initial score = $30x$."
+                    "desc": "Let total marks = 100x. Initial score = 30x."
                 },
                 {
                     "num": "Step 2",
-                    "desc": "Post-review score = $30x \\times 1.6 = 48x$."
+                    "desc": "Post-review score = 30x * 1.6 = 48x."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "Since she fails by 35 marks, Pass Marks = $48x + 35$ (Equation 1)."
+                    "desc": "Since she fails by 35 marks, Pass Marks = 48x + 35 (Equation 1)."
                 },
                 {
                     "num": "Step 4",
-                    "desc": "If post-review score increases by 25%, new score = $48x \\times 1.25 = 60x$."
+                    "desc": "If post-review score increases by 25%, new score = 48x * 1.25 = 60x."
                 },
                 {
                     "num": "Step 5",
-                    "desc": "Since she passes by 25 marks, Pass Marks = $60x - 25$ (Equation 2)."
+                    "desc": "Since she passes by 25 marks, Pass Marks = 60x - 25 (Equation 2)."
                 },
                 {
                     "num": "Step 6",
-                    "desc": "Equate the two: $48x + 35 = 60x - 25 \\Rightarrow 12x = 60 \\Rightarrow x = 5$."
+                    "desc": "Equate the two: 48x + 35 = 60x - 25 => 12x = 60 => x = 5."
                 },
                 {
                     "num": "Step 7",
-                    "desc": "Total marks = 500. Pass marks = $48(5) + 35 = 275$.<br>Pass Percentage = $(275/500) \\times 100 = 55\\%$."
+                    "desc": "Total marks = 500. Pass marks = 48(5) + 35 = 275.<br>Pass Percentage = (275/500) * 100 = 55%."
                 }
             ],
             "highlight": "55% (Option c)"
@@ -483,11 +483,11 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Marks gap",
-                    "desc": "Failing by 35 to passing by 25 is a gap of $35 + 25 = 60$ marks."
+                    "desc": "Failing by 35 to passing by 25 is a gap of 35 + 25 = 60 marks."
                 },
                 {
                     "num": "Equate",
-                    "desc": "12% of total marks = 60 marks $\\Rightarrow$ 1% = 5 marks.<br>Total marks = 500."
+                    "desc": "12% of total marks = 60 marks => 1% = 5 marks.<br>Total marks = 500."
                 },
                 {
                     "num": "Pass percentage",
@@ -515,7 +515,7 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Step 2",
-                    "desc": "40% of Total = 60 $\\Rightarrow$ Total class size = 150.<br>Boys = 105, Girls = 45."
+                    "desc": "40% of Total = 60 => Total class size = 150.<br>Boys = 105, Girls = 45."
                 },
                 {
                     "num": "Step 3",
@@ -523,15 +523,15 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Step 4",
-                    "desc": "Passing boys = 40 $\\Rightarrow$ Passing girls = $72 - 40 = 32$."
+                    "desc": "Passing boys = 40 => Passing girls = 72 - 40 = 32."
                 },
                 {
                     "num": "Step 5",
-                    "desc": "Failing girls = Total girls - Passing girls = $45 - 32 = 13$."
+                    "desc": "Failing girls = Total girls - Passing girls = 45 - 32 = 13."
                 },
                 {
                     "num": "Step 6",
-                    "desc": "Percentage of girls who fail = $(13 / 45) \\times 100 = 28.89\\%$."
+                    "desc": "Percentage of girls who fail = (13 / 45) * 100 = 28.89%."
                 }
             ],
             "highlight": "28.89% (Option d - None of these/actual count is 28.89%)"
@@ -541,7 +541,7 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Ratio",
-                    "desc": "Boys : Girls = 7 : 3. Difference = 4 parts = 60 $\\Rightarrow$ 1 part = 15.<br>Boys = 105, Girls = 45, Total = 150."
+                    "desc": "Boys : Girls = 7 : 3. Difference = 4 parts = 60 => 1 part = 15.<br>Boys = 105, Girls = 45, Total = 150."
                 },
                 {
                     "num": "Pass counts",
@@ -549,7 +549,7 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Fail percentage",
-                    "desc": "Failing girls = 45 - 32 = 13 out of 45.<br>$(13/45) \\times 100 = 28.89\\%$."
+                    "desc": "Failing girls = 45 - 32 = 13 out of 45.<br>(13/45) * 100 = 28.89%."
                 }
             ],
             "highlight": "Failed girls % = (13/45)*100 = 28.89%."
@@ -573,23 +573,23 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Step 2",
-                    "desc": "Year 2025 (+15%): Production = $100 \\times 1.15 = 115$."
+                    "desc": "Year 2025 (+15%): Production = 100 * 1.15 = 115."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "Year 2026 (+15%): Production = $115 \\times 1.15 = 132.25$."
+                    "desc": "Year 2026 (+15%): Production = 115 * 1.15 = 132.25."
                 },
                 {
                     "num": "Step 4",
-                    "desc": "Year 2027 (-12%): Production = $132.25 \\times 0.88 = 116.38$."
+                    "desc": "Year 2027 (-12%): Production = 132.25 * 0.88 = 116.38."
                 },
                 {
                     "num": "Step 5",
-                    "desc": "Year 2028 (+15%): Production = $116.38 \\times 1.15 = 133.837$."
+                    "desc": "Year 2028 (+15%): Production = 116.38 * 1.15 = 133.837."
                 },
                 {
                     "num": "Step 6",
-                    "desc": "Net percentage increase = $133.84\\% - 100\\% = 33.84\\%$, which rounds to 34%."
+                    "desc": "Net percentage increase = 133.84% - 100% = 33.84%, which rounds to 34%."
                 }
             ],
             "highlight": "34% (Option a/b closest)"
@@ -599,11 +599,11 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Multipliers",
-                    "desc": "Multiplier = $1.15 \\times 1.15 \\times 0.88 \\times 1.15$."
+                    "desc": "Multiplier = 1.15 * 1.15 * 0.88 * 1.15."
                 },
                 {
                     "num": "Group terms",
-                    "desc": "$1.3225 \\times 1.012 = 1.3384$."
+                    "desc": "1.3225 * 1.012 = 1.3384."
                 },
                 {
                     "num": "Solve",
@@ -627,7 +627,7 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Step 1",
-                    "desc": "Let the total sales be $S$. Since the remitted amount is large, $S > 1,00,000$."
+                    "desc": "Let the total sales be S. Since the remitted amount is large, S > 1,00,000."
                 },
                 {
                     "num": "Step 2",
@@ -635,19 +635,19 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Step 3",
-                    "desc": "Commission on remaining sales = 8% of $(S - 1,00,000) = 0.08S - 8000$."
+                    "desc": "Commission on remaining sales = 8% of (S - 1,00,000) = 0.08S - 8000."
                 },
                 {
                     "num": "Step 4",
-                    "desc": "Total commission = $7000 + 0.08S - 8000 = 0.08S - 1000$."
+                    "desc": "Total commission = 7000 + 0.08S - 8000 = 0.08S - 1000."
                 },
                 {
                     "num": "Step 5",
-                    "desc": "Remitted amount = Total sales - Total commission:<br>$S - (0.08S - 1000) = 2,95,400$."
+                    "desc": "Remitted amount = Total sales - Total commission:<br>S - (0.08S - 1000) = 2,95,400."
                 },
                 {
                     "num": "Step 6",
-                    "desc": "Simplify: $0.92S + 1000 = 2,95,400$<br>$0.92S = 2,94,400 \\Rightarrow S = 3,20,000$."
+                    "desc": "Simplify: 0.92S + 1000 = 2,95,400<br>0.92S = 2,94,400 => S = 3,20,000."
                 }
             ],
             "highlight": "₹3,20,000"
@@ -661,11 +661,11 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Adjust for difference",
-                    "desc": "Since he gets only 7% on the first 1,00,000 (1% less), the company receives an extra $1\\%$ of $1,00,000 = ₹1,000$."
+                    "desc": "Since he gets only 7% on the first 1,00,000 (1% less), the company receives an extra 1% of 1,00,000 = ₹1,000."
                 },
                 {
                     "num": "Equalize",
-                    "desc": "92% of Sales + 1,000 = 2,95,400 $\\Rightarrow$ 92% of Sales = 2,94,400."
+                    "desc": "92% of Sales + 1,000 = 2,95,400 => 92% of Sales = 2,94,400."
                 },
                 {
                     "num": "Divide",
@@ -689,27 +689,27 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Step 1",
-                    "desc": "Let the initial capital be $C$."
+                    "desc": "Let the initial capital be C."
                 },
                 {
                     "num": "Step 2",
-                    "desc": "Year 1: Capital becomes $1.5C$. After donating 50%, remaining = $0.75C$."
+                    "desc": "Year 1: Capital becomes 1.5C. After donating 50%, remaining = 0.75C."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "Year 2: Capital becomes $0.75C \\times 1.5 = 1.125C$.<br>He donates 50%, so donation = $0.5625C$, remaining = $0.5625C$."
+                    "desc": "Year 2: Capital becomes 0.75C * 1.5 = 1.125C.<br>He donates 50%, so donation = 0.5625C, remaining = 0.5625C."
                 },
                 {
                     "num": "Step 4",
-                    "desc": "Year 3: Capital becomes $0.5625C \\times 1.5 = 0.84375C$.<br>He donates 50%, remaining = $0.421875C$."
+                    "desc": "Year 3: Capital becomes 0.5625C * 1.5 = 0.84375C.<br>He donates 50%, remaining = 0.421875C."
                 },
                 {
                     "num": "Step 5",
-                    "desc": "Given remaining = ₹16,875:<br>$0.421875C = 16,875 \\Rightarrow C = 40,000$."
+                    "desc": "Given remaining = ₹16,875:<br>0.421875C = 16,875 => C = 40,000."
                 },
                 {
                     "num": "Step 6",
-                    "desc": "Amount donated at end of Year 2 = $0.5625 \\times 40,000 = ₹22,500$."
+                    "desc": "Amount donated at end of Year 2 = 0.5625 * 40,000 = ₹22,500."
                 }
             ],
             "highlight": "₹22,500 (Option c)"
@@ -719,19 +719,19 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Multiplier",
-                    "desc": "Net yearly change multiplier = $1.50 \\times 0.50 = 0.75$ (or $3/4$)."
+                    "desc": "Net yearly change multiplier = 1.50 * 0.50 = 0.75 (or 3/4)."
                 },
                 {
                     "num": "Three years",
-                    "desc": "Final Capital = Initial Capital $\\times (3/4)^3 = C \\times 27/64$."
+                    "desc": "Final Capital = Initial Capital * (3/4)^3 = C * 27/64."
                 },
                 {
                     "num": "Solve Initial",
-                    "desc": "Capital left = 16,875 $\\Rightarrow C \\times 27/64 = 16,875$.<br>$C = (16875 \\times 64) / 27 = 625 \\times 64 = ₹40,000$."
+                    "desc": "Capital left = 16,875 => C * 27/64 = 16,875.<br>C = (16875 * 64) / 27 = 625 * 64 = ₹40,000."
                 },
                 {
                     "num": "Donation 2",
-                    "desc": "Capital at end of Year 2 before donation = $40,000 \\times (3/4) \\times 1.5 = 45,000$.<br>Donation = 50% of 45,000 = ₹22,500."
+                    "desc": "Capital at end of Year 2 before donation = 40,000 * (3/4) * 1.5 = 45,000.<br>Donation = 50% of 45,000 = ₹22,500."
                 }
             ],
             "highlight": "Donation 2 = 50% of (40,000 * 3/4 * 1.5) = ₹22,500."
@@ -751,15 +751,15 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Step 1",
-                    "desc": "Let Hindi failed be $H = 48\\%$ and History failed be $S = 32\\%$. Failed in both $H \\cap S = 20\\%$."
+                    "desc": "Let Hindi failed be H = 48% and History failed be S = 32%. Failed in both H and S = 20%."
                 },
                 {
                     "num": "Step 2",
-                    "desc": "Percentage failing in Hindi or History or both is:<br>$H \\cup S = H + S - (H \\cap S) = 48\\% + 32\\% - 20\\% = 60\\%$."
+                    "desc": "Percentage failing in Hindi or History or both is:<br>H or S = H + S - (H and S) = 48% + 32% - 20% = 60%."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "Percentage passing both subjects = $100\\% - 60\\% = 40\\%$."
+                    "desc": "Percentage passing both subjects = 100% - 60% = 40%."
                 },
                 {
                     "num": "Step 4",
@@ -767,7 +767,7 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Step 5",
-                    "desc": "Total students = $880 / 0.40 = 2200$."
+                    "desc": "Total students = 880 / 0.40 = 2200."
                 }
             ],
             "highlight": "2200 (Option b)"
@@ -777,15 +777,15 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Venn Split",
-                    "desc": "- Failed Hindi only = $48 - 20 = 28\\%$<br>- Failed History only = $32 - 20 = 12\\%$<br>- Failed both = $20\\%$."
+                    "desc": "- Failed Hindi only = 48 - 20 = 28%<br>- Failed History only = 32 - 20 = 12%<br>- Failed both = 20%."
                 },
                 {
                     "num": "Total failed",
-                    "desc": "$28\\% + 12\\% + 20\\% = 60\\%$."
+                    "desc": "28% + 12% + 20% = 60%."
                 },
                 {
                     "num": "Passed",
-                    "desc": "40% passed $\\Rightarrow$ 40% = 880 $\\Rightarrow$ 10% = 220 $\\Rightarrow$ 100% = 2200."
+                    "desc": "40% passed => 40% = 880 => 10% = 220 => 100% = 2200."
                 }
             ],
             "highlight": "Mental math: 40% = 880 => Total = 2200."
@@ -805,27 +805,27 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Step 1",
-                    "desc": "Let total students = $100x$. Boys = $60x$, Girls = $40x$."
+                    "desc": "Let total students = 100x. Boys = 60x, Girls = 40x."
                 },
                 {
                     "num": "Step 2",
-                    "desc": "Boys getting fee waiver = 15% of $60x = 9x$."
+                    "desc": "Boys getting fee waiver = 15% of 60x = 9x."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "Girls getting fee waiver = 7.5% of $40x = 3x$."
+                    "desc": "Girls getting fee waiver = 7.5% of 40x = 3x."
                 },
                 {
                     "num": "Step 4",
-                    "desc": "Total getting fee waiver = $9x + 3x = 12x$."
+                    "desc": "Total getting fee waiver = 9x + 3x = 12x."
                 },
                 {
                     "num": "Step 5",
-                    "desc": "We are given $12x = 90 \\Rightarrow x = 7.5$. Total students = 750."
+                    "desc": "We are given 12x = 90 => x = 7.5. Total students = 750."
                 },
                 {
                     "num": "Step 6",
-                    "desc": "Students not getting fee waiver = $750 - 90 = 660$."
+                    "desc": "Students not getting fee waiver = 750 - 90 = 660."
                 },
                 {
                     "num": "Step 7",
@@ -839,15 +839,15 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Waiver percentage",
-                    "desc": "Net waiver % = $(0.6 \\times 15) + (0.4 \\times 7.5) = 9\\% + 3\\% = 12\\%$."
+                    "desc": "Net waiver % = (0.6 * 15) + (0.4 * 7.5) = 9% + 3% = 12%."
                 },
                 {
                     "num": "Calculate populations",
-                    "desc": "12% = 90 $\\Rightarrow$ 88% (no waiver) = $90 \\times (88/12) = 660$."
+                    "desc": "12% = 90 => 88% (no waiver) = 90 * (88/12) = 660."
                 },
                 {
                     "num": "Apply half-concession",
-                    "desc": "50% of those without waiver = $660 / 2 = 330$."
+                    "desc": "50% of those without waiver = 660 / 2 = 330."
                 }
             ],
             "highlight": "Concession = 50% of (90 * 88 / 12) = 330."
@@ -867,27 +867,27 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Step 1",
-                    "desc": "Let the initial value of the machine be $V$."
+                    "desc": "Let the initial value of the machine be V."
                 },
                 {
                     "num": "Step 2",
-                    "desc": "Value after Year 1 (10% depreciation) = $0.9V$."
+                    "desc": "Value after Year 1 (10% depreciation) = 0.9V."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "Value after Year 2 (5% depreciation) = $0.9V \\times 0.95 = 0.855V$."
+                    "desc": "Value after Year 2 (5% depreciation) = 0.9V * 0.95 = 0.855V."
                 },
                 {
                     "num": "Step 4",
-                    "desc": "Value after Year 3 (10% depreciation) = $0.855V \\times 0.9 = 0.7695V$."
+                    "desc": "Value after Year 3 (10% depreciation) = 0.855V * 0.9 = 0.7695V."
                 },
                 {
                     "num": "Step 5",
-                    "desc": "Value after Year 4 (5% depreciation) = $0.7695V \\times 0.95 = 0.731025V$."
+                    "desc": "Value after Year 4 (5% depreciation) = 0.7695V * 0.95 = 0.731025V."
                 },
                 {
                     "num": "Step 6",
-                    "desc": "Equate to given value: $0.731025V = 1,46,205 \\Rightarrow V = 2,00,000$."
+                    "desc": "Equate to given value: 0.731025V = 1,46,205 => V = 2,00,000."
                 }
             ],
             "highlight": "₹2,00,000 (Option b)"
@@ -897,11 +897,11 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Combined Multipliers",
-                    "desc": "Total multiplier = $0.9 \\times 0.95 \\times 0.9 \\times 0.95 = 0.81 \\times 0.9025 \\approx 0.731$."
+                    "desc": "Total multiplier = 0.9 * 0.95 * 0.9 * 0.95 = 0.81 * 0.9025 approx. 0.731."
                 },
                 {
                     "num": "Option Testing",
-                    "desc": "Test Option (b) 2,00,000:<br>$2,00,000 \\times 0.731 = 1,46,200$ (exactly matches 1,46,205 with rounding)."
+                    "desc": "Test Option (b) 2,00,000:<br>2,00,000 * 0.731 = 1,46,200 (exactly matches 1,46,205 with rounding)."
                 }
             ],
             "highlight": "Depreciation factor ~0.73. 2,00,000 * 0.731 = 1,46,200."
@@ -921,15 +921,15 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Step 1",
-                    "desc": "Total characters in report = $25 \\times 60 \\times 75 = 1,12,500$ characters."
+                    "desc": "Total characters in report = 25 * 60 * 75 = 1,12,500 characters."
                 },
                 {
                     "num": "Step 2",
-                    "desc": "New capacity per page = $55 \\text{ lines} \\times 90 \\text{ characters/line} = 4,950$ characters."
+                    "desc": "New capacity per page = 55 lines} * 90 characters/line} = 4,950 characters."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "New pages needed = $1,12,500 / 4,950 \\approx 22.73$ pages."
+                    "desc": "New pages needed = 1,12,500 / 4,950 approx. 22.73 pages."
                 },
                 {
                     "num": "Step 4",
@@ -937,7 +937,7 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Step 5",
-                    "desc": "Percentage change = $[(23 - 25) / 25] \\times 100 = -8\\%$."
+                    "desc": "Percentage change = [(23 - 25) / 25] * 100 = -8%."
                 }
             ],
             "highlight": "-8% (Option c)"
@@ -947,15 +947,15 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Capacity Ratio",
-                    "desc": "Ratio of new page capacity to old = $(55 \\times 90) / (60 \\times 75) = (11 \\times 9) / (12 \\times 15) = 99 / 180 = 0.55$."
+                    "desc": "Ratio of new page capacity to old = (55 * 90) / (60 * 75) = (11 * 9) / (12 * 15) = 99 / 180 = 0.55."
                 },
                 {
                     "num": "Solve Pages",
-                    "desc": "New pages = $25 / 1.1 = 22.73 \\rightarrow 23$ pages."
+                    "desc": "New pages = 25 / 1.1 = 22.73 \\rightarrow 23 pages."
                 },
                 {
                     "num": "Change",
-                    "desc": "A drop of 2 pages out of 25 is exactly a $2/25 = 8\\%$ decrease."
+                    "desc": "A drop of 2 pages out of 25 is exactly a 2/25 = 8% decrease."
                 }
             ],
             "highlight": "Drop from 25 to 23 pages is -8%."
@@ -979,11 +979,11 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Step 2",
-                    "desc": "Multiply the factors together:<br>Net multiplier = $1.1 \\times 1.2 \\times 0.8 \\times 1.25 \\times 1.5$."
+                    "desc": "Multiply the factors together:<br>Net multiplier = 1.1 * 1.2 * 0.8 * 1.25 * 1.5."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "Combine terms:<br>$1.1 \\times 1.2 = 1.32$<br>$1.32 \\times 0.8 = 1.056$<br>$1.056 \\times 1.25 = 1.32$<br>$1.32 \\times 1.5 = 1.98$."
+                    "desc": "Combine terms:<br>1.1 * 1.2 = 1.32<br>1.32 * 0.8 = 1.056<br>1.056 * 1.25 = 1.32<br>1.32 * 1.5 = 1.98."
                 },
                 {
                     "num": "Step 4",
@@ -997,11 +997,11 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Fraction Form",
-                    "desc": "Product = $(11/10) \\times (6/5) \\times (4/5) \\times (5/4) \\times (3/2)$."
+                    "desc": "Product = (11/10) * (6/5) * (4/5) * (5/4) * (3/2)."
                 },
                 {
                     "num": "Cancel terms",
-                    "desc": "Cancel $4/5$ and $5/4$, and cancel $6/2 = 3$:<br>Product = $(11/10) \\times 3 \\times (3/5) = 99/50 = 1.98$."
+                    "desc": "Cancel 4/5 and 5/4, and cancel 6/2 = 3:<br>Product = (11/10) * 3 * (3/5) = 99/50 = 1.98."
                 },
                 {
                     "num": "Answer",
@@ -1025,27 +1025,27 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Step 1",
-                    "desc": "Let the first raise be $r\\%$, so the second is $2r\\%$."
+                    "desc": "Let the first raise be r%, so the second is 2r%."
                 },
                 {
                     "num": "Step 2",
-                    "desc": "Successive multiplier equation:<br>$(1 + r/100)(1 + 2r/100) = 15/8 = 1.875$."
+                    "desc": "Successive multiplier equation:<br>(1 + r/100)(1 + 2r/100) = 15/8 = 1.875."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "Let $x = r/100$:<br>$(1 + x)(1 + 2x) = 1.875 \\Rightarrow 1 + 3x + 2x^2 = 1.875$."
+                    "desc": "Let x = r/100:<br>(1 + x)(1 + 2x) = 1.875 => 1 + 3x + 2x^2 = 1.875."
                 },
                 {
                     "num": "Step 4",
-                    "desc": "Solve quadratic: $2x^2 + 3x - 0.875 = 0 \\Rightarrow 16x^2 + 24x - 7 = 0$."
+                    "desc": "Solve quadratic: 2x^2 + 3x - 0.875 = 0 => 16x^2 + 24x - 7 = 0."
                 },
                 {
                     "num": "Step 5",
-                    "desc": "Factor the equation:<br>$(4x - 1)(4x + 7) = 0 \\Rightarrow x = 1/4 = 0.25$ (since $x > 0$)."
+                    "desc": "Factor the equation:<br>(4x - 1)(4x + 7) = 0 => x = 1/4 = 0.25 (since x > 0)."
                 },
                 {
                     "num": "Step 6",
-                    "desc": "First raise $r = x \\times 100 = 25\\%$."
+                    "desc": "First raise r = x * 100 = 25%."
                 }
             ],
             "highlight": "25% (Option c)"
@@ -1055,11 +1055,11 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Test 20%",
-                    "desc": "If first raise is 20%, second is 40%:<br>Multiplier = $1.20 \\times 1.40 = 1.68 \\neq 1.875$."
+                    "desc": "If first raise is 20%, second is 40%:<br>Multiplier = 1.20 * 1.40 = 1.68 != 1.875."
                 },
                 {
                     "num": "Test 25%",
-                    "desc": "If first raise is 25%, second is 50%:<br>Multiplier = $1.25 \\times 1.50 = 1.875$ (exactly 15/8)."
+                    "desc": "If first raise is 25%, second is 50%:<br>Multiplier = 1.25 * 1.50 = 1.875 (exactly 15/8)."
                 }
             ],
             "highlight": "Option testing: 25% and 50% gives exactly 1.875 (15/8)."
@@ -1079,27 +1079,27 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Step 1",
-                    "desc": "Convert October to November ratio:<br>Oct : Nov = $1.5 : 4/3 = 3/2 : 4/3 = 9 : 8$."
+                    "desc": "Convert October to November ratio:<br>Oct : Nov = 1.5 : 4/3 = 3/2 : 4/3 = 9 : 8."
                 },
                 {
                     "num": "Step 2",
-                    "desc": "Convert November to December ratio:<br>Nov : Dec = $2 : 8/3 = 6 : 8 = 3 : 4$."
+                    "desc": "Convert November to December ratio:<br>Nov : Dec = 2 : 8/3 = 6 : 8 = 3 : 4."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "Unify the ratios using LCM of November (24):<br>Oct : Nov = $27 : 24$<br>Nov : Dec = $24 : 32$<br>Ratio Oct : Nov : Dec = 27 : 24 : 32."
+                    "desc": "Unify the ratios using LCM of November (24):<br>Oct : Nov = 27 : 24<br>Nov : Dec = 24 : 32<br>Ratio Oct : Nov : Dec = 27 : 24 : 32."
                 },
                 {
                     "num": "Step 4",
-                    "desc": "Let salaries be $27x$, $24x$, and $32x$. Given Dec - Oct = ₹40:<br>$32x - 27x = 5x = 40 \\Rightarrow x = 8$."
+                    "desc": "Let salaries be 27x, 24x, and 32x. Given Dec - Oct = ₹40:<br>32x - 27x = 5x = 40 => x = 8."
                 },
                 {
                     "num": "Step 5",
-                    "desc": "Calculate total salary: $(27 + 24 + 32) \\times 8 = 83 \\times 8 = ₹664$."
+                    "desc": "Calculate total salary: (27 + 24 + 32) * 8 = 83 * 8 = ₹664."
                 },
                 {
                     "num": "Step 6",
-                    "desc": "Bonus = 40% of 664 = $0.4 \\times 664 = ₹265.6$."
+                    "desc": "Bonus = 40% of 664 = 0.4 * 664 = ₹265.6."
                 }
             ],
             "highlight": "₹265.6 (Option d)"
@@ -1113,7 +1113,7 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Values",
-                    "desc": "Unified: Oct : Nov : Dec = 27 : 24 : 32. Gap Dec-Oct = 5 parts = 40 $\\Rightarrow$ 1 part = 8."
+                    "desc": "Unified: Oct : Nov : Dec = 27 : 24 : 32. Gap Dec-Oct = 5 parts = 40 => 1 part = 8."
                 },
                 {
                     "num": "Bonus",
@@ -1137,19 +1137,19 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Step 1",
-                    "desc": "Let the raise percentage be $r\\%$."
+                    "desc": "Let the raise percentage be r%."
                 },
                 {
                     "num": "Step 2",
-                    "desc": "Equation: $100 \\times (1 + r/100)^3 = 140.49 \\Rightarrow (1 + r/100)^3 = 1.404928$."
+                    "desc": "Equation: 100 * (1 + r/100)^3 = 140.49 => (1 + r/100)^3 = 1.404928."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "Take cube root: $1 + r/100 = \\sqrt[3]{1.404928} = 1.12$."
+                    "desc": "Take cube root: 1 + r/100 = \\sqrt[3]{1.404928} = 1.12."
                 },
                 {
                     "num": "Step 4",
-                    "desc": "Solve for $r$: $r/100 = 0.12 \\Rightarrow r = 12\\%$."
+                    "desc": "Solve for r: r/100 = 0.12 => r = 12%."
                 }
             ],
             "highlight": "12% (Option a)"
@@ -1159,11 +1159,11 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Approximate",
-                    "desc": "We need $(1 + x)^3 \\approx 1.40$."
+                    "desc": "We need (1 + x)^3 approx. 1.40."
                 },
                 {
                     "num": "Test 12%",
-                    "desc": "$1.12^3 = (1.12 \\times 1.12) \\times 1.12 = 1.2544 \\times 1.12 = 1.404928$, which matches 140.49 rupees exactly."
+                    "desc": "1.12^3 = (1.12 * 1.12) * 1.12 = 1.2544 * 1.12 = 1.404928, which matches 140.49 rupees exactly."
                 }
             ],
             "highlight": "Testing 1.12^3 matches 1.4049."
@@ -1183,23 +1183,23 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Step 1",
-                    "desc": "Let the reduced price before tax be $P$."
+                    "desc": "Let the reduced price before tax be P."
                 },
                 {
                     "num": "Step 2",
-                    "desc": "With 9% tax, the amount paid is $P \\times 1.09 = 13,080$."
+                    "desc": "With 9% tax, the amount paid is P * 1.09 = 13,080."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "Solve for $P$: $P = 13,080 / 1.09 = ₹12,000$."
+                    "desc": "Solve for P: P = 13,080 / 1.09 = ₹12,000."
                 },
                 {
                     "num": "Step 4",
-                    "desc": "Reduction amount = $13,080 - 12,000 = ₹1,080$."
+                    "desc": "Reduction amount = 13,080 - 12,000 = ₹1,080."
                 },
                 {
                     "num": "Step 5",
-                    "desc": "Percentage reduction = $(1,080 / 13,080) \\times 100 = 8.2568\\%$, which is approximately 8.26%."
+                    "desc": "Percentage reduction = (1,080 / 13,080) * 100 = 8.2568%, which is approximately 8.26%."
                 }
             ],
             "highlight": "8.26% (Option b)"
@@ -1209,11 +1209,11 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Base formula",
-                    "desc": "Reduction ratio required is $t / (100 + t)$, where $t$ is the tax rate."
+                    "desc": "Reduction ratio required is t / (100 + t), where t is the tax rate."
                 },
                 {
                     "num": "Substitute",
-                    "desc": "Percentage reduction = $9 / 109 \\times 100 \\approx 8.26\\%$."
+                    "desc": "Percentage reduction = 9 / 109 * 100 approx. 8.26%."
                 }
             ],
             "highlight": "Direct: 9 / 109 = 8.26%."
@@ -1233,27 +1233,27 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Step 1",
-                    "desc": "Let initial Price = $P$ and initial Consumption = 200 tons."
+                    "desc": "Let initial Price = P and initial Consumption = 200 tons."
                 },
                 {
                     "num": "Step 2",
-                    "desc": "Initial Expenditure $E = 200P$."
+                    "desc": "Initial Expenditure E = 200P."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "New Price $P' = 1.1P$."
+                    "desc": "New Price P' = 1.1P."
                 },
                 {
                     "num": "Step 4",
-                    "desc": "New Consumption = 225 tons. Increase = $(225 - 200) / 200 = 12.5\\%$."
+                    "desc": "New Consumption = 225 tons. Increase = (225 - 200) / 200 = 12.5%."
                 },
                 {
                     "num": "Step 5",
-                    "desc": "New Expenditure $E' = 225 \\times 1.1P = 247.5P$."
+                    "desc": "New Expenditure E' = 225 * 1.1P = 247.5P."
                 },
                 {
                     "num": "Step 6",
-                    "desc": "Percentage increase in expenditure = $[(247.5 - 200) / 200] \\times 100 = (47.5 / 200) \\times 100 = 23.75\\%$."
+                    "desc": "Percentage increase in expenditure = [(247.5 - 200) / 200] * 100 = (47.5 / 200) * 100 = 23.75%."
                 }
             ],
             "highlight": "23.75% (Option c)"
@@ -1267,7 +1267,7 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Solve",
-                    "desc": "Net Expenditure change = $10 + 12.5 + (10 \\times 12.5)/100 = 22.5 + 1.25 = 23.75\\%$."
+                    "desc": "Net Expenditure change = 10 + 12.5 + (10 * 12.5)/100 = 22.5 + 1.25 = 23.75%."
                 }
             ],
             "highlight": "Mental math: 10 + 12.5 + 1.25 = 23.75%."
@@ -1291,7 +1291,7 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Step 2",
-                    "desc": "Target points = 78% of 250 = $0.78 \\times 250 = 195$."
+                    "desc": "Target points = 78% of 250 = 0.78 * 250 = 195."
                 },
                 {
                     "num": "Step 3",
@@ -1299,11 +1299,11 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Step 4",
-                    "desc": "Required Sociology marks = $195 - 147 = 48$."
+                    "desc": "Required Sociology marks = 195 - 147 = 48."
                 },
                 {
                     "num": "Step 5",
-                    "desc": "Sociology Percentage = $(48 / 50) \\times 100 = 96\\%$."
+                    "desc": "Sociology Percentage = (48 / 50) * 100 = 96%."
                 }
             ],
             "highlight": "96% (Option d)"
@@ -1317,11 +1317,11 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Deviations",
-                    "desc": "- English (65%): $-13\\% \\times 2 = -26$<br>- History (82%): $+4\\% \\times 2 = +8$<br>- Net current deviation = $-26 + 8 = -18$."
+                    "desc": "- English (65%): -13% * 2 = -26<br>- History (82%): +4% * 2 = +8<br>- Net current deviation = -26 + 8 = -18."
                 },
                 {
                     "num": "Balance",
-                    "desc": "Sociology must balance $-18$ points with a weight of 1, meaning it needs $+18\\%$ above the target:<br>Sociology target = $78\\% + 18\\% = 96\\%$."
+                    "desc": "Sociology must balance -18 points with a weight of 1, meaning it needs +18% above the target:<br>Sociology target = 78% + 18% = 96%."
                 }
             ],
             "highlight": "Deviation balancing: 78 + (26 - 8) = 96%."
@@ -1341,27 +1341,27 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Step 1",
-                    "desc": "Let initial gold = $W$."
+                    "desc": "Let initial gold = W."
                 },
                 {
                     "num": "Step 2",
-                    "desc": "First wife gets = $0.5W$."
+                    "desc": "First wife gets = 0.5W."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "Remaining gold = $0.5W$. Second wife gets 50% of remainder = $0.25W$."
+                    "desc": "Remaining gold = 0.5W. Second wife gets 50% of remainder = 0.25W."
                 },
                 {
                     "num": "Step 4",
-                    "desc": "Remaining gold = $0.25W$. Third wife gets 50% of remainder = $0.125W$."
+                    "desc": "Remaining gold = 0.25W. Third wife gets 50% of remainder = 0.125W."
                 },
                 {
                     "num": "Step 5",
-                    "desc": "Combined share = $0.5W + 0.25W + 0.125W = 0.875W$."
+                    "desc": "Combined share = 0.5W + 0.25W + 0.125W = 0.875W."
                 },
                 {
                     "num": "Step 6",
-                    "desc": "Equate and solve: $0.875W = 1,30,900$<br>$W = 1,30,900 / 0.875 = 1,30,900 \\times 8 / 7 = 1,49,600$ kg."
+                    "desc": "Equate and solve: 0.875W = 1,30,900<br>W = 1,30,900 / 0.875 = 1,30,900 * 8 / 7 = 1,49,600 kg."
                 }
             ],
             "highlight": "1,49,600 kg (Option b)"
@@ -1371,11 +1371,11 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Fraction",
-                    "desc": "Combined share = $1/2 + 1/4 + 1/8 = 7/8$ of the total gold."
+                    "desc": "Combined share = 1/2 + 1/4 + 1/8 = 7/8 of the total gold."
                 },
                 {
                     "num": "Solve",
-                    "desc": "$7/8 \\text{ of Total} = 1,30,900 \\Rightarrow \\text{Total} = 1,30,900 \\times 8 / 7 = 18,700 \\times 8 = 1,49,600$ kg."
+                    "desc": "7/8 of Total} = 1,30,900 => Total} = 1,30,900 * 8 / 7 = 18,700 * 8 = 1,49,600 kg."
                 }
             ],
             "highlight": "Total = 130,900 * 8 / 7 = 1,49,600 kg."
@@ -1395,11 +1395,11 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Step 1",
-                    "desc": "Let initial population be $P$."
+                    "desc": "Let initial population be P."
                 },
                 {
                     "num": "Step 2",
-                    "desc": "At the end of Year 1: Population becomes $1.08P$. With 1% immigration calculated on this, it becomes:<br>$1.08P \\times 1.01 = 1.0908P$."
+                    "desc": "At the end of Year 1: Population becomes 1.08P. With 1% immigration calculated on this, it becomes:<br>1.08P * 1.01 = 1.0908P."
                 },
                 {
                     "num": "Step 3",
@@ -1407,11 +1407,11 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Step 4",
-                    "desc": "After 2 years: Population = $P \\times (1.0908)^2 \\approx 1.18984 \\times P$."
+                    "desc": "After 2 years: Population = P * (1.0908)^2 approx. 1.18984 * P."
                 },
                 {
                     "num": "Step 5",
-                    "desc": "Net percentage increase = $18.984\\%$."
+                    "desc": "Net percentage increase = 18.984%."
                 }
             ],
             "highlight": "18.984% (Option a)"
@@ -1421,11 +1421,11 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Yearly Rate",
-                    "desc": "Yearly rate = $8 + 1 + (8 \\times 1)/100 = 9.08\\%$."
+                    "desc": "Yearly rate = 8 + 1 + (8 * 1)/100 = 9.08%."
                 },
                 {
                     "num": "Two Years",
-                    "desc": "Successive rate after 2 years = $9.08 + 9.08 + (9.08 \\times 9.08)/100 = 18.16 + 0.824 = 18.984\\%$."
+                    "desc": "Successive rate after 2 years = 9.08 + 9.08 + (9.08 * 9.08)/100 = 18.16 + 0.824 = 18.984%."
                 }
             ],
             "highlight": "2-year compound rate = 18.984%."
@@ -1445,19 +1445,19 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Step 1",
-                    "desc": "Let initial female population be $F_i$. Since migration affects both genders equally, we have:<br>$F_i \\times 0.9 \\times 0.9 \\times 0.9 = 3,64,500$."
+                    "desc": "Let initial female population be F_i. Since migration affects both genders equally, we have:<br>F_i * 0.9 * 0.9 * 0.9 = 3,64,500."
                 },
                 {
                     "num": "Step 2",
-                    "desc": "Simplify: $F_i \\times 0.729 = 3,64,500 \\Rightarrow F_i = 3,64,500 / 0.729 = 5,00,000$."
+                    "desc": "Simplify: F_i * 0.729 = 3,64,500 => F_i = 3,64,500 / 0.729 = 5,00,000."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "Before migration, female population was half the male population ($M_i = 2F_i$)."
+                    "desc": "Before migration, female population was half the male population (M_i = 2F_i)."
                 },
                 {
                     "num": "Step 4",
-                    "desc": "Total population before migration = $F_i + M_i = 3F_i = 3 \\times 5,00,000 = 15,00,000$."
+                    "desc": "Total population before migration = F_i + M_i = 3F_i = 3 * 5,00,000 = 15,00,000."
                 }
             ],
             "highlight": "15,00,000 (Option c)"
@@ -1467,11 +1467,11 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Successive Ratios",
-                    "desc": "Remaining females = 72.9% of initial females = 3,64,500 $\\Rightarrow$ Initial females = 5,00,000."
+                    "desc": "Remaining females = 72.9% of initial females = 3,64,500 => Initial females = 5,00,000."
                 },
                 {
                     "num": "Scale to total",
-                    "desc": "Total population is $1 + 2 = 3$ times the female population.<br>Total = $3 \\times 5,00,000 = 15,00,000$."
+                    "desc": "Total population is 1 + 2 = 3 times the female population.<br>Total = 3 * 5,00,000 = 15,00,000."
                 }
             ],
             "highlight": "Total = 3 * (364,500 / 0.729) = 15,00,000."
@@ -1491,27 +1491,27 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Step 1",
-                    "desc": "Let total national FDI = $T$."
+                    "desc": "Let total national FDI = T."
                 },
                 {
                     "num": "Step 2",
-                    "desc": "FDI to Gujarat = 30% of $T = 0.3T$."
+                    "desc": "FDI to Gujarat = 30% of T = 0.3T."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "FDI to urban Gujarat = 80% of $0.3T = 0.24T$ (since 20% is rural)."
+                    "desc": "FDI to urban Gujarat = 80% of 0.3T = 0.24T (since 20% is rural)."
                 },
                 {
                     "num": "Step 4",
-                    "desc": "We are given: $0.24T = \\$72$ million $\\Rightarrow T = 72 / 0.24 = \\$300$ million."
+                    "desc": "We are given: 0.24T = 72 million => T = 72 / 0.24 = 300 million."
                 },
                 {
                     "num": "Step 5",
-                    "desc": "FDI to Andhra Pradesh = 20% of $T = 20\\%$ of 300 = $\\$60$ million."
+                    "desc": "FDI to Andhra Pradesh = 20% of T = 20% of 300 = 60$ million."
                 },
                 {
                     "num": "Step 6",
-                    "desc": "FDI to rural AP = 50% of AP's share = 50% of 60 = $\\$30$ million."
+                    "desc": "FDI to rural AP = 50% of AP's share = 50% of 60 = 30$ million."
                 }
             ],
             "highlight": "$30 m (Option a)"
@@ -1521,11 +1521,11 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "National FDI",
-                    "desc": "Gujarat Urban = $30\\% \\times 80\\% = 24\\%$ of total. 24% = 72M $\\Rightarrow$ Total = 300M."
+                    "desc": "Gujarat Urban = 30% * 80% = 24% of total. 24% = 72M => Total = 300M."
                 },
                 {
                     "num": "AP Rural",
-                    "desc": "AP Rural = $20\\% \\times 50\\% = 10\\%$ of total.<br>Rural AP FDI = 10% of 300M = $\\$30$M."
+                    "desc": "AP Rural = 20% * 50% = 10% of total.<br>Rural AP FDI = 10% of 300M = 30$M."
                 }
             ],
             "highlight": "Rural AP = 10% of (72M / 0.24) = $30m."
@@ -1545,15 +1545,15 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Step 1",
-                    "desc": "Previous total FDI = $\\$300$ million. With 20% growth, new total = $\\$300 \\times 1.2 = \\$360$ million."
+                    "desc": "Previous total FDI = 300 million. With 20% growth, new total = 300 * 1.2 = 360$ million."
                 },
                 {
                     "num": "Step 2",
-                    "desc": "Maharashtra's share = 10% of new total = 10% of 360 = $\\$36$ million."
+                    "desc": "Maharashtra's share = 10% of new total = 10% of 360 = 36$ million."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "Urban Maharashtra share = 12% of Maharashtra's share = 12% of 36 = $\\$4.32$ million."
+                    "desc": "Urban Maharashtra share = 12% of Maharashtra's share = 12% of 36 = 4.32$ million."
                 }
             ],
             "highlight": "$4.32 m (Option b)"
@@ -1563,11 +1563,11 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Product",
-                    "desc": "Urban Maharashtra next year = $300 \\times 1.20 \\times 0.10 \\times 0.12$."
+                    "desc": "Urban Maharashtra next year = 300 * 1.20 * 0.10 * 0.12."
                 },
                 {
                     "num": "Solve",
-                    "desc": "$360 \\times 0.012 = \\$4.32$ million."
+                    "desc": "360 * 0.012 = 4.32$ million."
                 }
             ],
             "highlight": "360M * 0.10 * 0.12 = $4.32m."
@@ -1591,7 +1591,7 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Step 2",
-                    "desc": "New income = $100 \\times 1.2 = 120$."
+                    "desc": "New income = 100 * 1.2 = 120."
                 },
                 {
                     "num": "Step 3",
@@ -1599,11 +1599,11 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Step 4",
-                    "desc": "New food expenditure percentage = $(25 / 120) \\times 100 = 20.83\\%$."
+                    "desc": "New food expenditure percentage = (25 / 120) * 100 = 20.83%."
                 },
                 {
                     "num": "Step 5",
-                    "desc": "Percentage point decrease = $25\\% - 20.83\\% = 4.17\\%$ (or 4.16% with decimal rounding)."
+                    "desc": "Percentage point decrease = 25% - 20.83% = 4.17% (or 4.16% with decimal rounding)."
                 }
             ],
             "highlight": "4.16 (Option c)"
@@ -1613,11 +1613,11 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Fraction",
-                    "desc": "New food share = $25 / 1.2 = 20.83\\%$."
+                    "desc": "New food share = 25 / 1.2 = 20.83%."
                 },
                 {
                     "num": "Difference",
-                    "desc": "$25 - 20.833 = 4.167$ percentage points."
+                    "desc": "25 - 20.833 = 4.167 percentage points."
                 }
             ],
             "highlight": "25 - 25/1.2 = 4.16 percentage points."
@@ -1637,23 +1637,23 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Step 1",
-                    "desc": "Let initial dimensions be $a = b = c = 1$. Surface Area = $2(1 \\times 1 + 1 \\times 1 + 1 \\times 1) = 6$."
+                    "desc": "Let initial dimensions be a = b = c = 1. Surface Area = 2(1 * 1 + 1 * 1 + 1 * 1) = 6."
                 },
                 {
                     "num": "Step 2",
-                    "desc": "New dimensions: $a' = 1.05$, $b' = 1.05$, $c' = 1.20$."
+                    "desc": "New dimensions: a' = 1.05, b' = 1.05, c' = 1.20."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "New Surface Area = $2(1.05 \\times 1.05 + 1.05 \\times 1.2 + 1.2 \\times 1.05)$."
+                    "desc": "New Surface Area = 2(1.05 * 1.05 + 1.05 * 1.2 + 1.2 * 1.05)."
                 },
                 {
                     "num": "Step 4",
-                    "desc": "Calculate terms: $1.1025 + 1.26 + 1.26 = 3.6225$. New Area = $2 \\times 3.6225 = 7.245$."
+                    "desc": "Calculate terms: 1.1025 + 1.26 + 1.26 = 3.6225. New Area = 2 * 3.6225 = 7.245."
                 },
                 {
                     "num": "Step 5",
-                    "desc": "Percentage change = $[(7.245 - 6) / 6] \\times 100 = (1.245 / 6) \\times 100 = 20.75\\%$."
+                    "desc": "Percentage change = [(7.245 - 6) / 6] * 100 = (1.245 / 6) * 100 = 20.75%."
                 }
             ],
             "highlight": "20.75% (Option d)"
@@ -1663,11 +1663,11 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Product changes",
-                    "desc": "- ab changes by: $5 + 5 + 0.25 = 10.25\\%$<br>- bc changes by: $5 + 20 + 1 = 26\\%$<br>- ca changes by: $20 + 5 + 1 = 26\\%$"
+                    "desc": "- ab changes by: 5 + 5 + 0.25 = 10.25%<br>- bc changes by: 5 + 20 + 1 = 26%<br>- ca changes by: 20 + 5 + 1 = 26%"
                 },
                 {
                     "num": "Average",
-                    "desc": "Net Surface Area change = Average of the three changes = $(10.25 + 26 + 26) / 3 = 62.25 / 3 = 20.75\\%$."
+                    "desc": "Net Surface Area change = Average of the three changes = (10.25 + 26 + 26) / 3 = 62.25 / 3 = 20.75%."
                 }
             ],
             "highlight": "Average: (10.25 + 26 + 26) / 3 = 20.75%."
@@ -1687,19 +1687,19 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Step 1",
-                    "desc": "Final salary of A = $A \\times 1.25 \\times 0.80 = 1.0A$."
+                    "desc": "Final salary of A = A * 1.25 * 0.80 = 1.0A."
                 },
                 {
                     "num": "Step 2",
-                    "desc": "Final salary of B = $B \\times 1.20 \\times 0.75 = 0.90B$."
+                    "desc": "Final salary of B = B * 1.20 * 0.75 = 0.90B."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "Equate the results: $1.0A = 0.90B$."
+                    "desc": "Equate the results: 1.0A = 0.90B."
                 },
                 {
                     "num": "Step 4",
-                    "desc": "Find ratio B to A: $B / A = 1 / 0.9 = 10/9$."
+                    "desc": "Find ratio B to A: B / A = 1 / 0.9 = 10/9."
                 }
             ],
             "highlight": "10:9 (Option c)"
@@ -1709,15 +1709,15 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "A change",
-                    "desc": "+25% then -20% is a net change of $25 - 20 - (25 \\times 20)/100 = 0\\%$ (remains A)."
+                    "desc": "+25% then -20% is a net change of 25 - 20 - (25 * 20)/100 = 0% (remains A)."
                 },
                 {
                     "num": "B change",
-                    "desc": "+20% then -25% is a net change of $20 - 25 - (20 \\times 25)/100 = -10\\%$ (becomes 0.9B)."
+                    "desc": "+20% then -25% is a net change of 20 - 25 - (20 * 25)/100 = -10% (becomes 0.9B)."
                 },
                 {
                     "num": "Equate",
-                    "desc": "$A = 0.9B \\Rightarrow B/A = 10/9$."
+                    "desc": "A = 0.9B => B/A = 10/9."
                 }
             ],
             "highlight": "B:A = 10:9."
@@ -1741,19 +1741,19 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Step 2",
-                    "desc": "Let the added milk quantity be $M$ litres."
+                    "desc": "Let the added milk quantity be M litres."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "New milk concentration = $(12 + M) / (60 + M)$."
+                    "desc": "New milk concentration = (12 + M) / (60 + M)."
                 },
                 {
                     "num": "Step 4",
-                    "desc": "We want concentration to equal 15% (0.15):<br>$(12 + M) / (60 + M) = 0.15 \\Rightarrow 12 + M = 9 + 0.15M$<br>$0.85M = -3$."
+                    "desc": "We want concentration to equal 15% (0.15):<br>(12 + M) / (60 + M) = 0.15 => 12 + M = 9 + 0.15M<br>0.85M = -3."
                 },
                 {
                     "num": "Step 5",
-                    "desc": "Since $M$ is negative, it is impossible to reduce the milk concentration by adding milk."
+                    "desc": "Since M is negative, it is impossible to reduce the milk concentration by adding milk."
                 }
             ],
             "highlight": "This is not possible (Option d)"
@@ -1763,7 +1763,7 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Initial %",
-                    "desc": "Initial milk is $1/5 = 20\\%$."
+                    "desc": "Initial milk is 1/5 = 20%."
                 },
                 {
                     "num": "Trend",
@@ -1799,15 +1799,15 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Step 3",
-                    "desc": "New expenditure = $115 - 6 = 109$."
+                    "desc": "New expenditure = 115 - 6 = 109."
                 },
                 {
                     "num": "Step 4",
-                    "desc": "Increase in expenditure = $109 - 94 = 15$."
+                    "desc": "Increase in expenditure = 109 - 94 = 15."
                 },
                 {
                     "num": "Step 5",
-                    "desc": "Percentage hike in expenditure = $(15 / 94) \\times 100 \\approx 15.957\\%$."
+                    "desc": "Percentage hike in expenditure = (15 / 94) * 100 approx. 15.957%."
                 }
             ],
             "highlight": "15.95% (Option a)"
@@ -1821,7 +1821,7 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Solve",
-                    "desc": "Hike in expenditure = $15 / 94 \\approx 15.95\\%$."
+                    "desc": "Hike in expenditure = 15 / 94 approx. 15.95%."
                 }
             ],
             "highlight": "Direct: 15 / 94 = 15.95%."
@@ -1849,7 +1849,7 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Step 3",
-                    "desc": "C = 2/3 of A = $2/3 \\times 150 = 100$."
+                    "desc": "C = 2/3 of A = 2/3 * 150 = 100."
                 },
                 {
                     "num": "Step 4",
@@ -1857,7 +1857,7 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Step 5",
-                    "desc": "Even after all values increase by 10%, their relative ratio remains the same:<br>D as a percent of B = $(D / B) \\times 100 = (160 / 100) \\times 100 = 160\\%$."
+                    "desc": "Even after all values increase by 10%, their relative ratio remains the same:<br>D as a percent of B = (D / B) * 100 = (160 / 100) * 100 = 160%."
                 }
             ],
             "highlight": "160% (Option b)"
@@ -1867,11 +1867,11 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Observe ratio",
-                    "desc": "$A = 1.5B$, $C = 2/3 A = B$, $D = 1.6C = 1.6B$."
+                    "desc": "A = 1.5B, C = 2/3 A = B, D = 1.6C = 1.6B."
                 },
                 {
                     "num": "Growth",
-                    "desc": "All terms scale by 1.1, which cancels out when computing ratios.<br>So $D/B = 1.6 \\Rightarrow 160\\%$."
+                    "desc": "All terms scale by 1.1, which cancels out when computing ratios.<br>So D/B = 1.6 => 160%."
                 }
             ],
             "highlight": "Uniform 10% increase cancels: D is 160% of B."
@@ -1891,23 +1891,23 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Step 1",
-                    "desc": "Let initial amounts be $A$ and $B$. $A + B = 1200$."
+                    "desc": "Let initial amounts be A and B. A + B = 1200."
                 },
                 {
                     "num": "Step 2",
-                    "desc": "A spends 12% (leaves 88%), B spends 20% (leaves 80%).<br>Remaining = $0.88A + 0.80B = 85\\%$ of 1200 = 1020."
+                    "desc": "A spends 12% (leaves 88%), B spends 20% (leaves 80%).<br>Remaining = 0.88A + 0.80B = 85% of 1200 = 1020."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "Substitute $B = 1200 - A$:<br>$0.88A + 0.80(1200 - A) = 1020$."
+                    "desc": "Substitute B = 1200 - A:<br>0.88A + 0.80(1200 - A) = 1020."
                 },
                 {
                     "num": "Step 4",
-                    "desc": "Simplify: $0.88A + 960 - 0.80A = 1020$<br>$0.08A = 60 \\Rightarrow A = 750$."
+                    "desc": "Simplify: 0.88A + 960 - 0.80A = 1020<br>0.08A = 60 => A = 750."
                 },
                 {
                     "num": "Step 5",
-                    "desc": "Amount left with A = 88% of $750 = 0.88 \\times 750 = ₹660$."
+                    "desc": "Amount left with A = 88% of 750 = 0.88 * 750 = ₹660."
                 }
             ],
             "highlight": "₹660 (Option d)"
@@ -1917,19 +1917,19 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Spent rates",
-                    "desc": "Overall spent = $100\\% - 85\\% = 15\\%$."
+                    "desc": "Overall spent = 100% - 85% = 15%."
                 },
                 {
                     "num": "Allegation",
-                    "desc": "- A spends 12% (difference from 15% is 5 parts)<br>- B spends 20% (difference from 15% is 3 parts)<br>Ratio of A to B = $(20-15) : (15-12) = 5 : 3$."
+                    "desc": "- A spends 12% (difference from 15% is 5 parts)<br>- B spends 20% (difference from 15% is 3 parts)<br>Ratio of A to B = (20-15) : (15-12) = 5 : 3."
                 },
                 {
                     "num": "Initial A",
-                    "desc": "Initial A = $1200 \\times 5 / 8 = 750$."
+                    "desc": "Initial A = 1200 * 5 / 8 = 750."
                 },
                 {
                     "num": "Amount left A",
-                    "desc": "Remaining A = $750 \\times 0.88 = ₹660$."
+                    "desc": "Remaining A = 750 * 0.88 = ₹660."
                 }
             ],
             "highlight": "Remaining A = 750 * 0.88 = ₹660."
@@ -1949,19 +1949,19 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Step 1",
-                    "desc": "Maya spends = 12% of $M = 0.12M$."
+                    "desc": "Maya spends = 12% of M = 0.12M."
                 },
                 {
                     "num": "Step 2",
-                    "desc": "Chanda spends the same amount = $0.12M$."
+                    "desc": "Chanda spends the same amount = 0.12M."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "Chanda's percentage spent = $(\\text{Amount Spent} / C) \\times 100$."
+                    "desc": "Chanda's percentage spent = (Amount Spent} / C) * 100."
                 },
                 {
                     "num": "Step 4",
-                    "desc": "Substitute Chanda's spend: $(0.12M / C) \\times 100 = 12M / C$."
+                    "desc": "Substitute Chanda's spend: (0.12M / C) * 100 = 12M / C."
                 }
             ],
             "highlight": "12M / C (Option c)"
@@ -1971,7 +1971,7 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Direct form",
-                    "desc": "Spend = $0.12M$. Percentage of C = $(0.12M / C) \\times 100 = 12M / C$."
+                    "desc": "Spend = 0.12M. Percentage of C = (0.12M / C) * 100 = 12M / C."
                 }
             ],
             "highlight": "12M/C"
@@ -1991,27 +1991,27 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Step 1",
-                    "desc": "Let number of males = $M$, females = $F$. $M + F = p \\Rightarrow F = p - M$."
+                    "desc": "Let number of males = M, females = F. M + F = p => F = p - M."
                 },
                 {
                     "num": "Step 2",
-                    "desc": "Total literates = $p \\times x/100$."
+                    "desc": "Total literates = p * x/100."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "Literate equation: $M \\times y/100 + F \\times z/100 = p \\times x/100 \\Rightarrow My + Fz = px$."
+                    "desc": "Literate equation: M * y/100 + F * z/100 = p * x/100 => My + Fz = px."
                 },
                 {
                     "num": "Step 4",
-                    "desc": "Substitute $F$: $My + (p - M)z = px$."
+                    "desc": "Substitute F: My + (p - M)z = px."
                 },
                 {
                     "num": "Step 5",
-                    "desc": "Solve for $M$: $M(y - z) + pz = px \\Rightarrow M(y - z) = p(x - z)$."
+                    "desc": "Solve for M: M(y - z) + pz = px => M(y - z) = p(x - z)."
                 },
                 {
                     "num": "Step 6",
-                    "desc": "$M = p(x - z) / (y - z)$."
+                    "desc": "M = p(x - z) / (y - z)."
                 }
             ],
             "highlight": "p(x - z) / (y - z) (Option d)"
@@ -2021,15 +2021,15 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Allegation",
-                    "desc": "- Males literate = $y\\%$, Females = $z\\%$, overall = $x\\%$."
+                    "desc": "- Males literate = y%, Females = z%, overall = x%."
                 },
                 {
                     "num": "Ratio",
-                    "desc": "Males : Females = $(x-z) : (y-x)$."
+                    "desc": "Males : Females = (x-z) : (y-x)."
                 },
                 {
                     "num": "Solve",
-                    "desc": "Males share = $(x-z) / [(x-z) + (y-x)] = (x-z) / (y-z)$.<br>Number of males = $p \\times (x-z) / (y-z)$."
+                    "desc": "Males share = (x-z) / [(x-z) + (y-x)] = (x-z) / (y-z).<br>Number of males = p * (x-z) / (y-z)."
                 }
             ],
             "highlight": "Males = p * (x - z) / (y - z)."
@@ -2049,15 +2049,15 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Step 1",
-                    "desc": "Let initial weekly collection = $C$."
+                    "desc": "Let initial weekly collection = C."
                 },
                 {
                     "num": "Step 2",
-                    "desc": "New collection = $C \\times 0.80 \\times 1.40 = 1.12C$."
+                    "desc": "New collection = C * 0.80 * 1.40 = 1.12C."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "Increase = $0.12C = 1,68,000 \\Rightarrow C = 14,00,000$."
+                    "desc": "Increase = 0.12C = 1,68,000 => C = 14,00,000."
                 },
                 {
                     "num": "Step 4",
@@ -2065,7 +2065,7 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Step 5",
-                    "desc": "Daily increase = Weekly increase / 7 = $1,68,000 / 7 = ₹24,000$."
+                    "desc": "Daily increase = Weekly increase / 7 = 1,68,000 / 7 = ₹24,000."
                 }
             ],
             "highlight": "₹24,000 (Option c)"
@@ -2115,11 +2115,11 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Step 5",
-                    "desc": "Total literates = $72 + 56 + 27 = 155$."
+                    "desc": "Total literates = 72 + 56 + 27 = 155."
                 },
                 {
                     "num": "Step 6",
-                    "desc": "Town literacy percentage = $(155 / 200) \\times 100 = 77.5\\%$."
+                    "desc": "Town literacy percentage = (155 / 200) * 100 = 77.5%."
                 }
             ],
             "highlight": "None of these (Option d - correct value is 77.5%)"
@@ -2129,7 +2129,7 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Weighted %",
-                    "desc": "Avg = $[(9 \\times 80) + (8 \\times 70) + (3 \\times 90)] / 20$<br>Avg = $[720 + 560 + 270] / 20 = 1550 / 20 = 77.5\\%$."
+                    "desc": "Avg = [(9 * 80) + (8 * 70) + (3 * 90)] / 20<br>Avg = [720 + 560 + 270] / 20 = 1550 / 20 = 77.5%."
                 }
             ],
             "highlight": "Average: (720 + 560 + 270) / 20 = 77.5%."
@@ -2149,27 +2149,27 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Step 1",
-                    "desc": "Let original fraction be $N/D$."
+                    "desc": "Let original fraction be N/D."
                 },
                 {
                     "num": "Step 2",
-                    "desc": "New numerator = $2N \\times 1.1 = 2.2N$."
+                    "desc": "New numerator = 2N * 1.1 = 2.2N."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "New denominator = $3D \\times 0.7 = 2.1D$."
+                    "desc": "New denominator = 3D * 0.7 = 2.1D."
                 },
                 {
                     "num": "Step 4",
-                    "desc": "New fraction: $2.2N / 2.1D = 22N / 21D$."
+                    "desc": "New fraction: 2.2N / 2.1D = 22N / 21D."
                 },
                 {
                     "num": "Step 5",
-                    "desc": "Given: $22N / 21D = (11/100) \\times (16/21)$."
+                    "desc": "Given: 22N / 21D = (11/100) * (16/21)."
                 },
                 {
                     "num": "Step 6",
-                    "desc": "Simplify: $22N / D = 176 / 100 \\Rightarrow N/D = 176 / 2200 = 8 / 100 = 2/25$."
+                    "desc": "Simplify: 22N / D = 176 / 100 => N/D = 176 / 2200 = 8 / 100 = 2/25."
                 }
             ],
             "highlight": "2/25 (Option b)"
@@ -2179,11 +2179,11 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Simplify",
-                    "desc": "$(2.2N) / (2.1D) = 0.11 \\times (16/21)$"
+                    "desc": "(2.2N) / (2.1D) = 0.11 * (16/21)"
                 },
                 {
                     "num": "Solve",
-                    "desc": "$(2.2/2.1) \\times (N/D) = (1.76 / 21) \\Rightarrow 2.2(N/D) = 0.176$<br>$N/D = 0.176 / 2.2 = 0.08 = 2/25$."
+                    "desc": "(2.2/2.1) * (N/D) = (1.76 / 21) => 2.2(N/D) = 0.176<br>N/D = 0.176 / 2.2 = 0.08 = 2/25."
                 }
             ],
             "highlight": "N/D = 2/25."
@@ -2207,15 +2207,15 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Step 2",
-                    "desc": "A's score = $40 - 10\\%$ of 40 = 36."
+                    "desc": "A's score = 40 - 10% of 40 = 36."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "B's score = $36 - 11.11\\%$ of 36. Note $11.11\\% = 1/9$, so B's score = $36 - 4 = 32$."
+                    "desc": "B's score = 36 - 11.11% of 36. Note 11.11% = 1/9, so B's score = 36 - 4 = 32."
                 },
                 {
                     "num": "Step 4",
-                    "desc": "Sum of A and B = $36 + 32 = 68$."
+                    "desc": "Sum of A and B = 36 + 32 = 68."
                 },
                 {
                     "num": "Step 5",
@@ -2223,11 +2223,11 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Step 6",
-                    "desc": "C's score compared to (A+B) = $[(68 - 40) / 68] \\times 100 = (28/68) \\times 100 = 41.176\\%$."
+                    "desc": "C's score compared to (A+B) = [(68 - 40) / 68] * 100 = (28/68) * 100 = 41.176%."
                 },
                 {
                     "num": "Step 7",
-                    "desc": "Write as fraction: $41(3/17)\\%$."
+                    "desc": "Write as fraction: 41(3/17)%."
                 }
             ],
             "highlight": "41(3/17)% (Option b)"
@@ -2237,11 +2237,11 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Fractions",
-                    "desc": "Pass = 40. A = 36. B = $36 \\times 8/9 = 32$. Sum = 68. C = 40."
+                    "desc": "Pass = 40. A = 36. B = 36 * 8/9 = 32. Sum = 68. C = 40."
                 },
                 {
                     "num": "Solve",
-                    "desc": "Percentage difference = $28 / 68 = 7/17 = 41.17\\%$."
+                    "desc": "Percentage difference = 28 / 68 = 7/17 = 41.17%."
                 }
             ],
             "highlight": "7/17 = 41 3/17%."
@@ -2261,27 +2261,27 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Step 1",
-                    "desc": "Let initial wage per hour be $W$, and working hours be $H$."
+                    "desc": "Let initial wage per hour be W, and working hours be H."
                 },
                 {
                     "num": "Step 2",
-                    "desc": "Initial weekly wage = $W \\times H$."
+                    "desc": "Initial weekly wage = W * H."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "New hourly wage = $1.125 W$."
+                    "desc": "New hourly wage = 1.125 W."
                 },
                 {
                     "num": "Step 4",
-                    "desc": "New working hours = $0.92 H$."
+                    "desc": "New working hours = 0.92 H."
                 },
                 {
                     "num": "Step 5",
-                    "desc": "New weekly wage = $1.125 \\times 0.92 \\times (WH) = 1.035 WH$."
+                    "desc": "New weekly wage = 1.125 * 0.92 * (WH) = 1.035 WH."
                 },
                 {
                     "num": "Step 6",
-                    "desc": "Percentage increase = $3.5\\%$."
+                    "desc": "Percentage increase = 3.5%."
                 }
             ],
             "highlight": "+3.5% (Option a)"
@@ -2291,11 +2291,11 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Fractions",
-                    "desc": "12.5% increase = $9/8$. 8% decrease = $23/25$."
+                    "desc": "12.5% increase = 9/8. 8% decrease = 23/25."
                 },
                 {
                     "num": "Product",
-                    "desc": "$9/8 \\times 23/25 = 207 / 200 = 1.035$."
+                    "desc": "9/8 * 23/25 = 207 / 200 = 1.035."
                 },
                 {
                     "num": "Change",
@@ -2331,11 +2331,11 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Step 4",
-                    "desc": "Difference between X and Y = $80 - 72 = 8$."
+                    "desc": "Difference between X and Y = 80 - 72 = 8."
                 },
                 {
                     "num": "Step 5",
-                    "desc": "Percentage difference relative to X = $(8 / 80) \\times 100 = 10\\%$."
+                    "desc": "Percentage difference relative to X = (8 / 80) * 100 = 10%."
                 }
             ],
             "highlight": "10% (Option c)"
@@ -2349,7 +2349,7 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Solve",
-                    "desc": "Y is less than X by: $(0.8 - 0.72) / 0.8 = 0.08 / 0.8 = 10\\%$."
+                    "desc": "Y is less than X by: (0.8 - 0.72) / 0.8 = 0.08 / 0.8 = 10%."
                 }
             ],
             "highlight": "Direct: 0.08 / 0.8 = 10%."
@@ -2369,23 +2369,23 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Step 1",
-                    "desc": "Let the original price be $P$."
+                    "desc": "Let the original price be P."
                 },
                 {
                     "num": "Step 2",
-                    "desc": "Successive multipliers: $(1 + x/100)(1 - x/100) = (1 - x^2 / 10000)$."
+                    "desc": "Successive multipliers: (1 + x/100)(1 - x/100) = (1 - x^2 / 10000)."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "We are given the final price is $K/100$:<br>$P \\times (1 - x^2 / 10000) = K / 100$."
+                    "desc": "We are given the final price is K/100:<br>P * (1 - x^2 / 10000) = K / 100."
                 },
                 {
                     "num": "Step 4",
-                    "desc": "Simplify: $P \\times (10000 - x^2) / 10000 = K / 100$<br>$P \\times (10000 - x^2) / 100 = K$."
+                    "desc": "Simplify: P * (10000 - x^2) / 10000 = K / 100<br>P * (10000 - x^2) / 100 = K."
                 },
                 {
                     "num": "Step 5",
-                    "desc": "Solve for $P$: $P = 100K / (10000 - x^2) = 100K / (100^2 - x^2)$."
+                    "desc": "Solve for P: P = 100K / (10000 - x^2) = 100K / (100^2 - x^2)."
                 }
             ],
             "highlight": "100K / (100^2 - x^2) (Option d)"
@@ -2395,11 +2395,11 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Formula",
-                    "desc": "New price = $P \\times (1 - x^2 / 10000) = K/100$."
+                    "desc": "New price = P * (1 - x^2 / 10000) = K/100."
                 },
                 {
                     "num": "Solve",
-                    "desc": "$P = (K/100) / [ (10000 - x^2)/10000 ] = 100K / (10000 - x^2)$."
+                    "desc": "P = (K/100) / [ (10000 - x^2)/10000 ] = 100K / (10000 - x^2)."
                 }
             ],
             "highlight": "P = 100K / (10000 - x^2)"
@@ -2419,31 +2419,31 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Step 1",
-                    "desc": "Let initial salary be $S$. Taxable income is $80\\%$ of $S$ (deduction is 20%)."
+                    "desc": "Let initial salary be S. Taxable income is 80% of S (deduction is 20%)."
                 },
                 {
                     "num": "Step 2",
-                    "desc": "Initial tax paid = $12\\%$ of $0.8S = 0.096S$."
+                    "desc": "Initial tax paid = 12% of 0.8S = 0.096S."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "New salary = $S + 4800$. Taxable income is $0.8(S + 4800)$."
+                    "desc": "New salary = S + 4800. Taxable income is 0.8(S + 4800)."
                 },
                 {
                     "num": "Step 4",
-                    "desc": "New tax paid = $10\\%$ of $0.8(S + 4800) = 0.08S + 384$."
+                    "desc": "New tax paid = 10% of 0.8(S + 4800) = 0.08S + 384."
                 },
                 {
                     "num": "Step 5",
-                    "desc": "Equate tax paid: $0.096S = 0.08S + 384 \\Rightarrow 0.016S = 384$."
+                    "desc": "Equate tax paid: 0.096S = 0.08S + 384 => 0.016S = 384."
                 },
                 {
                     "num": "Step 6",
-                    "desc": "Solve for $S$: $S = 384 / 0.016 = 24,000$."
+                    "desc": "Solve for S: S = 384 / 0.016 = 24,000."
                 },
                 {
                     "num": "Step 7",
-                    "desc": "Increased salary = $S + 4800 = 24,000 + 4,800 = ₹28,800$."
+                    "desc": "Increased salary = S + 4800 = 24,000 + 4,800 = ₹28,800."
                 }
             ],
             "highlight": "₹28,800 (Option d - None of these/actual amount is 28,800)"
@@ -2461,7 +2461,7 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Solve",
-                    "desc": "Difference of 1 part = ₹4,800.<br>New salary = 6 parts = $6 \\times 4,800 = ₹28,800$."
+                    "desc": "Difference of 1 part = ₹4,800.<br>New salary = 6 parts = 6 * 4,800 = ₹28,800."
                 }
             ],
             "highlight": "Direct: 6 * 4800 = 28,800."
@@ -2481,19 +2481,19 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Step 1",
-                    "desc": "Let the reduced price before tax be $P$."
+                    "desc": "Let the reduced price before tax be P."
                 },
                 {
                     "num": "Step 2",
-                    "desc": "Inclusive of 7% tax, price paid is $P \\times 1.07 = 2568$."
+                    "desc": "Inclusive of 7% tax, price paid is P * 1.07 = 2568."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "Solve for $P$: $P = 2568 / 1.07 = ₹2400$."
+                    "desc": "Solve for P: P = 2568 / 1.07 = ₹2400."
                 },
                 {
                     "num": "Step 4",
-                    "desc": "Reduction needed = Original price - Reduced price = $2568 - 2400 = ₹168$."
+                    "desc": "Reduction needed = Original price - Reduced price = 2568 - 2400 = ₹168."
                 }
             ],
             "highlight": "₹168 (Option a)"
@@ -2503,11 +2503,11 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Formula",
-                    "desc": "Reduction = $2568 - (2568 / 1.07)$."
+                    "desc": "Reduction = 2568 - (2568 / 1.07)."
                 },
                 {
                     "num": "Simplify",
-                    "desc": "Reduction = $2568 \\times (0.07 / 1.07) = 2400 \\times 0.07 = ₹168$."
+                    "desc": "Reduction = 2568 * (0.07 / 1.07) = 2400 * 0.07 = ₹168."
                 }
             ],
             "highlight": "Reduction = 2568 * 7 / 107 = 168."
