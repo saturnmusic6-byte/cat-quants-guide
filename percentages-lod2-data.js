@@ -151,7 +151,7 @@ const PERCENTAGES_LOD2_SUMS = [
             "steps": [
                 {
                     "num": "Approximation",
-                    "desc": "59.25% is very close to 60% (or 3/5).<br>If 3/5 of Total = 300M, then Total approx. 500M."
+                    "desc": "59.25% is very close to 60% (or 3/5).<br>If 3/5 of Total = 300 million, then Total approx. 500M."
                 },
                 {
                     "num": "Group count",
@@ -1484,7 +1484,7 @@ const PERCENTAGES_LOD2_SUMS = [
         "lod": "LOD 2 (Advanced)",
         "year": "Arun Sharma Q28",
         "title": "Gujarat & Andhra Pradesh FDI Split",
-        "question": "According to a recent survey report issued by the Commerce Ministry, Government of India, 30% of the total FDI goes to Gujarat and 20% of this goes to rural areas. If the FDI in Gujarat, which goes to urban areas, is $72 m, then find the size of FDI in rural Andhra Pradesh, which attracts 50% of the FDI that comes to Andhra Pradesh, which accounts for 20% of the total FDI?",
+        "question": "According to a recent survey report issued by the Commerce Ministry, Government of India, 30% of the total FDI goes to Gujarat and 20% of this goes to rural areas. If the FDI in Gujarat, which goes to urban areas, is $72 million, then find the size of FDI in rural Andhra Pradesh, which attracts 50% of the FDI that comes to Andhra Pradesh, which accounts for 20% of the total FDI?",
         "hint": "First calculate the total national FDI using Gujarat's urban share, then find AP's rural share.",
         "traditional": {
             "intro": "Use percentages of total FDI to construct a step-by-step ratio mapping.",
@@ -1507,28 +1507,28 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Step 5",
-                    "desc": "FDI to Andhra Pradesh = 20% of T = 20% of 300 = 60$ million."
+                    "desc": "FDI to Andhra Pradesh = 20% of T = 20% of 300 = $60 million."
                 },
                 {
                     "num": "Step 6",
-                    "desc": "FDI to rural AP = 50% of AP's share = 50% of 60 = 30$ million."
+                    "desc": "FDI to rural AP = 50% of AP's share = 50% of 60 = $30 million."
                 }
             ],
-            "highlight": "$30 m (Option a)"
+            "highlight": "$30 million (Option a)"
         },
         "shortcut": {
             "intro": "Map the ratio paths directly.",
             "steps": [
                 {
                     "num": "National FDI",
-                    "desc": "Gujarat Urban = 30% * 80% = 24% of total. 24% = 72M => Total = 300M."
+                    "desc": "Gujarat Urban = 30% * 80% = 24% of total. 24% = 72 million => Total = 300 million."
                 },
                 {
                     "num": "AP Rural",
-                    "desc": "AP Rural = 20% * 50% = 10% of total.<br>Rural AP FDI = 10% of 300M = 30$M."
+                    "desc": "AP Rural = 20% * 50% = 10% of total.<br>Rural AP FDI = 10% of 300 million = $30M."
                 }
             ],
-            "highlight": "Rural AP = 10% of (72M / 0.24) = $30m."
+            "highlight": "Rural AP = 10% of (72 million / 0.24) = $30 million."
         }
     },
     {
@@ -1539,24 +1539,24 @@ const PERCENTAGES_LOD2_SUMS = [
         "year": "Arun Sharma Q29",
         "title": "FDI growth & Urban Maharashtra",
         "question": "If in question 28, the growth in the size of FDI for the next year with respect to the previous year is 20%, then find the share of urban Maharashtra next year if 12% of the total FDI going to Maharashtra went to urban areas (provided Maharashtra attracted only 10% of the total share for both years).",
-        "hint": "Scale the previous year's total FDI of $300m by 1.2, then calculate Maharashtra's urban share.",
+        "hint": "Scale the previous year's total FDI of $300 million by 1.2, then calculate Maharashtra's urban share.",
         "traditional": {
             "intro": "Apply the growth rate and calculate next year's regional allocations.",
             "steps": [
                 {
                     "num": "Step 1",
-                    "desc": "Previous total FDI = 300 million. With 20% growth, new total = 300 * 1.2 = 360$ million."
+                    "desc": "Previous total FDI = 300 million. With 20% growth, new total = 300 * 1.2 = $360 million."
                 },
                 {
                     "num": "Step 2",
-                    "desc": "Maharashtra's share = 10% of new total = 10% of 360 = 36$ million."
+                    "desc": "Maharashtra's share = 10% of new total = 10% of 360 = $36 million."
                 },
                 {
                     "num": "Step 3",
-                    "desc": "Urban Maharashtra share = 12% of Maharashtra's share = 12% of 36 = 4.32$ million."
+                    "desc": "Urban Maharashtra share = 12% of Maharashtra's share = 12% of 36 = $4.32 million."
                 }
             ],
-            "highlight": "$4.32 m (Option b)"
+            "highlight": "$4.32 million (Option b)"
         },
         "shortcut": {
             "intro": "Multiply the percentage multipliers directly.",
@@ -1567,10 +1567,10 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Solve",
-                    "desc": "360 * 0.012 = 4.32$ million."
+                    "desc": "360 * 0.012 = $4.32 million."
                 }
             ],
-            "highlight": "360M * 0.10 * 0.12 = $4.32m."
+            "highlight": "360 million * 0.10 * 0.12 = $4.32m."
         }
     },
     {
