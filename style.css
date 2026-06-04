@@ -869,6 +869,44 @@ body.light-theme #ai-user-input {
     background: var(--color-secondary);
 }
 
+/* LOD Switcher Styles */
+.lod-selector {
+    display: flex;
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.04);
+    padding: 4px;
+    border-radius: var(--radius-md);
+    border: 1px solid var(--border-color);
+}
+
+body.light-theme .lod-selector {
+    background: rgba(0, 0, 0, 0.03);
+}
+
+.lod-btn {
+    flex: 1;
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    padding: 8px 12px;
+    border-radius: var(--radius-sm);
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.lod-btn:hover {
+    color: var(--text-primary);
+}
+
+.lod-btn.active {
+    background: var(--color-primary);
+    color: #FFFFFF;
+    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+}
+
 /* Responsive Overrides */
 @media (max-width: 900px) {
     .app-container {
