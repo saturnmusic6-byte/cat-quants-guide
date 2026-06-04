@@ -305,18 +305,26 @@ const PERCENTAGES_LOD2_SUMS = [
             "highlight": "14% (Option b)"
         },
         "shortcut": {
-            "intro": "Use percentage change multipliers directly.",
+            "intro": "Use the standard 'Assume 100' method to avoid complex variable equations.",
             "steps": [
                 {
-                    "num": "Multiplier Division",
-                    "desc": "Let population multiplier be m_p.<br>1.30 = m_p * 1.14 => m_p = 1.30 / 1.14 approx. 1.14."
+                    "num": "Assume Base Values",
+                    "desc": "Let the initial population be 100 and the initial per capita wheat production be 1. Total wheat production = 100 * 1 = 100."
+                },
+                {
+                    "num": "Apply Percentage Changes",
+                    "desc": "New total production increases by 30% to 130. New per capita production increases by 14% to 1.14."
+                },
+                {
+                    "num": "Calculate New Population",
+                    "desc": "New Population = New Production / New Per Capita = 130 / 1.14 approx. 114."
                 },
                 {
                     "num": "Deduce Growth",
-                    "desc": "Since the multiplier is ~1.14, the population growth is approximately 14%."
+                    "desc": "A change from 100 to 114 represents a 14% growth in population."
                 }
             ],
-            "highlight": "Closest answer: 14%."
+            "highlight": "New Population = 130 / 1.14 approx. 114 (14% growth)."
         }
     },
     {
@@ -1484,7 +1492,7 @@ const PERCENTAGES_LOD2_SUMS = [
         "lod": "LOD 2 (Advanced)",
         "year": "Arun Sharma Q28",
         "title": "Gujarat & Andhra Pradesh FDI Split",
-        "question": "According to a recent survey report issued by the Commerce Ministry, Government of India, 30% of the total FDI goes to Gujarat and 20% of this goes to rural areas. If the FDI in Gujarat, which goes to urban areas, is $72 million, then find the size of FDI in rural Andhra Pradesh, which attracts 50% of the FDI that comes to Andhra Pradesh, which accounts for 20% of the total FDI?",
+        "question": "According to a recent survey report issued by the Commerce Ministry, Government of India, 30% of the total FDI goes to Gujarat and 20% of this goes to rural areas. If the FDI in Gujarat, which goes to urban areas, is $72 millionillion, then find the size of FDI in rural Andhra Pradesh, which attracts 50% of the FDI that comes to Andhra Pradesh, which accounts for 20% of the total FDI?",
         "hint": "First calculate the total national FDI using Gujarat's urban share, then find AP's rural share.",
         "traditional": {
             "intro": "Use percentages of total FDI to construct a step-by-step ratio mapping.",
@@ -1511,10 +1519,10 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Step 6",
-                    "desc": "FDI to rural AP = 50% of AP's share = 50% of 60 = $30 million."
+                    "desc": "FDI to rural AP = 50% of AP's share = 50% of 60 = $30 millionillion."
                 }
             ],
-            "highlight": "$30 million (Option a)"
+            "highlight": "$30 millionillion (Option a)"
         },
         "shortcut": {
             "intro": "Map the ratio paths directly.",
@@ -1525,10 +1533,10 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "AP Rural",
-                    "desc": "AP Rural = 20% * 50% = 10% of total.<br>Rural AP FDI = 10% of 300 million = $30M."
+                    "desc": "AP Rural = 20% * 50% = 10% of total.<br>Rural AP FDI = 10% of 300 million = $30 million."
                 }
             ],
-            "highlight": "Rural AP = 10% of (72 million / 0.24) = $30 million."
+            "highlight": "Rural AP = 10% of (72 million / 0.24) = $30 millionillion."
         }
     },
     {
@@ -1553,10 +1561,10 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Step 3",
-                    "desc": "Urban Maharashtra share = 12% of Maharashtra's share = 12% of 36 = $4.32 million."
+                    "desc": "Urban Maharashtra share = 12% of Maharashtra's share = 12% of 36 = $4.32 millionillion."
                 }
             ],
-            "highlight": "$4.32 million (Option b)"
+            "highlight": "$4.32 millionillion (Option b)"
         },
         "shortcut": {
             "intro": "Multiply the percentage multipliers directly.",
@@ -1567,7 +1575,7 @@ const PERCENTAGES_LOD2_SUMS = [
                 },
                 {
                     "num": "Solve",
-                    "desc": "360 * 0.012 = $4.32 million."
+                    "desc": "360 * 0.012 = $4.32 millionillion."
                 }
             ],
             "highlight": "360 million * 0.10 * 0.12 = $4.32m."
