@@ -4,25 +4,29 @@
 
 const CLASSIC_SUMS = [];
 let currentSum = null;
+let currentLOD = "1";
 
 document.addEventListener("DOMContentLoaded", () => {
     // Load Percentages LOD 1 question bank (Q19–Q60 only)
     if (typeof PERCENTAGES_LOD1_SUMS !== 'undefined') {
         CLASSIC_SUMS.push(...PERCENTAGES_LOD1_SUMS);
     }
+    // Load Percentages LOD 2 question bank (Q1–Q47)
+    if (typeof PERCENTAGES_LOD2_SUMS !== 'undefined') {
+        CLASSIC_SUMS.push(...PERCENTAGES_LOD2_SUMS);
+    }
 
     initTheme();
+    initLODSwitcher();
     renderProblemList();
     initAITutor();
 
     // Auto-select first question
-    if (CLASSIC_SUMS.length > 0) {
-        selectProblem(CLASSIC_SUMS[0].id);
-    }
+    selectFirstQuestion();
 });
 
 /* ──────────────────────────────────────────────
-   1. Theme Toggle
+   1. Theme Toggle & LOD Switcher
    ────────────────────────────────────────────── */
 function initTheme() {
     const saved = localStorage.getItem("quantum_theme") || "dark";
@@ -35,6 +39,53 @@ function initTheme() {
     });
 }
 
+function initLODSwitcher() {
+    const lod1Btn = document.getElementById("lod1-btn");
+    const lod2Btn = document.getElementById("lod2-btn");
+
+    if (lod1Btn && lod2Btn) {
+        lod1Btn.addEventListener("click", () => switchLOD("1"));
+        lod2Btn.addEventListener("click", () => switchLOD("2"));
+    }
+}
+
+function switchLOD(lod) {
+    if (currentLOD === lod) return;
+    currentLOD = lod;
+
+    // Toggle active classes on buttons
+    const lod1Btn = document.getElementById("lod1-btn");
+    const lod2Btn = document.getElementById("lod2-btn");
+    
+    if (lod === "1") {
+        lod1Btn.classList.add("active");
+        lod2Btn.classList.remove("active");
+    } else {
+        lod2Btn.classList.add("active");
+        lod1Btn.classList.remove("active");
+    }
+
+    renderProblemList();
+    selectFirstQuestion();
+}
+
+function getActiveSums() {
+    return CLASSIC_SUMS.filter(s => {
+        if (currentLOD === "1") {
+            return s.lod.includes("LOD 1");
+        } else {
+            return s.lod.includes("LOD 2");
+        }
+    });
+}
+
+function selectFirstQuestion() {
+    const activeSums = getActiveSums();
+    if (activeSums.length > 0) {
+        selectProblem(activeSums[0].id);
+    }
+}
+
 /* ──────────────────────────────────────────────
    2. Sidebar Question List
    ────────────────────────────────────────────── */
@@ -42,11 +93,12 @@ function renderProblemList() {
     const list = document.getElementById("problem-list");
     list.innerHTML = "";
 
-    CLASSIC_SUMS.forEach(sum => {
+    const activeSums = getActiveSums();
+    activeSums.forEach(sum => {
         const item = document.createElement("div");
         item.className = "problem-item";
         item.setAttribute("data-id", sum.id);
-        const num = sum.id.replace("sum", "Q");
+        const num = sum.year.replace("Arun Sharma ", "");
         item.innerHTML = `
             <span class="problem-num">${num}</span>
             <span class="problem-title">${sum.title}</span>
@@ -75,7 +127,7 @@ function selectProblem(sumId) {
     });
 
     // Header
-    const qNum = sum.id.replace("sum", "Question ");
+    const qNum = sum.year.replace("Arun Sharma ", "Question ");
     document.getElementById("curr-question-title").innerText = `${qNum}: ${sum.title}`;
 
     // Build solution HTML
@@ -249,7 +301,7 @@ function escapeHTML(str) {
 
 function updateAIContext(sum) {
     const ctx = document.getElementById("ai-current-context");
-    const num = sum.id.replace("sum", "Q");
+    const num = sum.year.replace("Arun Sharma ", "");
     ctx.innerText = `${num}: ${sum.title}`;
 
     // Generate smart suggestion chips
@@ -311,8 +363,9 @@ function getOfflineAnswer(query) {
     // ── Build context from current question ──
     let contextBlock = "";
     if (currentSum) {
+        const num = currentSum.year.replace("Arun Sharma ", "");
         contextBlock = `
-            <p style="margin-bottom:8px; opacity:0.7; font-size:0.8em;">📌 <em>Answering in context of ${currentSum.id.replace("sum","Q")}: ${currentSum.title}</em></p>
+            <p style="margin-bottom:8px; opacity:0.7; font-size:0.8em;">📌 <em>Answering in context of ${num}: ${currentSum.title}</em></p>
         `;
     }
 
